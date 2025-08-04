@@ -128,10 +128,10 @@ const array = [1, 2, 3, 4]; // even if const it only
 // means that you cannot have another array object assigned
 // but the array elements are still mutable
 
-for(i = 0; i < 4; i++) // uses compile time constant
+for(let i = 0; i < 4; i++) // uses compile time constant
 	console.log(array[i]);
 
-for(i = 0; i < array.length; i++)
+for(let i = 0; i < array.length; i++)
 	console.log(array[i]);
 
 console.log(Array.from("string"));
@@ -150,8 +150,9 @@ arr.unshift(char);
 console.log("unshift: " + arr); 
 console.log("concat with world: ", arr.concat(Array.from("world")));
 console.log("join with +: ", arr.join("+"));
-console.log("slice from 1 to 4: ", arr.slice(1, 4));
-console.log("splice from 1 to 3: ", arr.splice(1, 3));
+console.log("join with ' ': ", arr.join(""));
+console.log("slice from 1 to 4: ", arr.slice(1, 4)); // start index, end index
+console.log("splice from 1 to 3: ", arr.splice(1, 3)); // start index, delete count
 
 // Destructure of array
 var [num_x, num_y] = [1, 2]
@@ -172,3 +173,196 @@ console.log(arr, arr2);
 const arr3 = [...arr2]
 arr3.splice(0, 2);
 console.log(arr2, arr3);
+
+let i = 0;
+do {
+	if(arr[i] === "world")
+		break;
+	console.log(arr[i]);
+	i++;
+} while(i < arr.length);
+
+while(i < arr.length){
+	if(arr[i] === "h"){
+		i++;
+		continue;
+	}
+	console.log(arr[i]);
+	i++;
+}
+
+for(let value of arr) // c++ like range based for loop
+	console.log(value);
+
+for(let [i, value] of arr.entries())
+	console.log(i, ": ", value);
+
+const obj = {
+	name: "Alice",
+	age: 23,
+	sayHello: function() {
+		return `${obj.name}: Hello!`;
+	},
+	career: {}
+}
+
+const obj2 = {
+	name: "Bob",
+	arr: [1, 2, 3],
+	hairColor: "brown"
+}
+
+// references all the non-primitives
+// copies all the primitives
+// obj2 overwrites duplicate key pairs
+const obj3 = {...obj, ...obj2};
+obj2.arr.push("string"); // showing referencing
+delete obj3.career;
+
+console.log(obj.sayHello(), obj3);
+
+// This uses a constructor by calling the new keyword
+// if you dont call the new keyword you will simply call
+// a function, this is okay for primitives but not for object
+const set = new Set([1, 2, 3, 4]);
+set.add(1);
+set.delete(1);
+set.has(1);
+set.size;
+
+for(const value of set){
+	console.log(value);
+}
+arr4 = Array.from(set);
+set.clear();
+
+const array1 = [1, 3, 6, 8, 9];
+for(i = 0; i < array1.size; i++);
+	console.log(array[i]);
+
+const bank = new Map([["alice", 300], ["bob", 150]]);
+bank.set("eve", 100);
+console.log("Alice has: " + bank.get("alice"));
+
+bank.delete("alice");
+for(const [key, value] of bank)
+	console.log(key,":", value);
+
+for(const key of bank.keys())
+	console.log(key);
+
+for(const value of bank.values())
+	console.log(value);
+
+if(bank.has("eve"))
+	console.log("Eve exists in the bank logs.");
+else console.log("Eve doesnt exist in the bank logs.");
+
+var a = 3;
+var b = 4;
+try {
+	a = a + b;
+	throw new Error("404 not found");
+} 
+catch(error) {
+	a = a - b;
+	console.log(error.message);
+}
+finally {
+	console.log("end of the try-catch");
+}
+
+// arrow function, takes name adds 1 and returns
+// arrow functions inherit from global scope
+const greet1 = (name) => name + "1";
+console.log(greet1("Name"));
+
+// rest parameters, take any amount of functions as an array
+function addNums(...numbers){
+	var sum = 0;
+	for(let i = 0; i < numbers.length; i++)
+		sum += numbers[i];
+	return sum;
+}
+
+console.log(addNums(1, 2, 3, 4, 5, 6));
+
+console.log(array);
+// 1, 2, 3, 4
+
+// reduce, map and filter methods
+
+// 2, 4, 6, 8
+const doubled = array.map((element) => element * 2);
+console.log(doubled);
+
+const reduced = array.reduce((sum, element) => sum = sum + element, 0);
+console.log(reduced);
+
+const odd = array.filter((element) => element % 2 === 1);
+console.log(odd);
+
+// This keyword
+// it can also be defined straight in the object
+// but also like this
+function personGreet(){
+	console.log(`Hello I am ${this.name}`);
+}
+const person1 = {
+	name: "Alice",
+	greet: personGreet
+};
+
+const person2 = {
+	name: "Bob",
+	greet: personGreet
+};
+
+person1.greet();
+person2.greet();
+
+// Promises
+// States: resolve, reject, and pending
+var izranucata_masa_sunca = 0;
+const promise = new Promise((resolve, reject) => {
+	// logic goes here
+	value = "good";
+	error = -1;
+	if(true) { // handle
+		resolve(value);
+	} else {
+		reject(error);
+	}
+});
+
+// this waits for the promise to 
+// no longer be pending
+promise.then((value) => {
+	console.log(value);
+}) // if resolved
+.catch((value) => { // reject
+	console.log("rejected:", value);
+})
+.finally(() => {
+	console.log("cleanup code");
+});
+
+const promise1 = Promise.resolve(3);
+const promise2 = new Promise((resolve, reject) => setTimeout(resolve, 100, "foo"));
+const promise3 = new Promise((resolve, reject) => setTimeout(reject, 500, "bar"));
+
+// ...
+// ...
+// ...
+// ...
+
+// if all are true, then, if any is false catch
+Promise.all([promise1, promise2, promise3])
+.then((result) => {
+	console.log(result);
+})
+.catch((error) => {
+	console.error(error);
+});
+
+// async javascript, oop in javascript, prototypes
