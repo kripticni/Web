@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Most generic first html page</title>
+	</head>
+	<body>
+		<h1>List of html elements</h1>
+		<p><b>&lt!DOCTYPE html&gt</b>, is at the start of the source indicating the type of document.</p>
+		<p><b>&lthtml&gt</b>, wraps the entire markup of the page.</p>
+		<p><b>&lthead&gt</b>, only changes the display text of the page in the browser</p>
+		<p><b>&ltbody&gt</b>, the actual contents of the page.</p>
+		<p><b>&lth1-6&gt</b>, headings differing in size from biggest to smallest.</p>
+		<p><b>&ltp&gt</b>, a basic paragraph.</p>
+		<p><b>&ltbr&gt</b>, puts a<br>line break.</p>
+		<p><b>&ltb&gt</b>, simply <b>bold</b>s the said text.</p>
+		<p><b>&ltstrong&gt</b>, allows the text to be styled according to the defined style of <strong>strong</strong> (by default, only bold).</p>
+		<p><b>&lti&gt</b>, simply makes the text <i>italic.</i></p>
+		<p><b>&ltem&gt</b>, also allows the text to be styled according to the defined style of <em>emphasis</em> (by default, only italic).</p>
+		<ul>
+			<li><b>&ltul&gt</b>, unordered list or bullet point list, has its list items.</li>
+			<li><b>&ltol&gt</b>, ordered list, has its list elements.</li>
+			<li><b>&ltli&gt</b>, a list element.</li>
+		</ul>
+		<p><b>&lta&gt</b>, used to create <a target="_blank" href="https://en.wikipedia.org/wiki/Hyperlink">hyperlinks</a> to either the same page or a new one and for downloading files. It has the following atributes and options for them:<br>
+		<ol>
+			<li><b>href</b>, for the link or heading of the page.</li>
+			<li><b>target</b>, where the page should be opened, _blank, _self, _parent, _top.</li>
+			<li><b>rel</b>, relationship between the pages, nofollow, noopener.</li>
+			<li><b>title</b>, extra info showed on hover.</li>
+			<li><b>download</b>, tells the browser to download instead of opening as a page.</li>
+		</ol>
+		</p>
+		<table>
+			<thead>
+				<tr>
+					<th>HTML element</th>
+					<th>Meaning</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>&lttable&gt</td>
+					<td>Opens the table element allowing for it to be created.</td>
+				</tr>
+				<tr>
+					<td>&ltthead&gt</td>
+					<td>Defines what goes into the header of the table.</td>
+				</tr>
+				<tr>
+					<td>&lttr&gt</td>
+					<td>Defines what goes into the row of the table.</td>
+				</tr>
+				<tr>
+					<td>&lttbody&gt</td>
+					<td>Defines what goes into the body of the table.</td>
+				</tr> 
+				<tr>
+					<td>&lttd&gt</td>
+					<td>Defines what goes into the cell of the table.</td>
+				</tr> 
+		</table>
+		<hr>
+		<p><b>&lthr&gt</b>, puts a horizontal line.</p>
+		<hr>
+		<p><b>&ltdiv&gt</b>, used to group up content and takes the full width.</p>
+		<p><b>&ltspan&gt</b>, opposed to div is an inline container.</p>
+
+		<form action="process.js" method="POST">
+			<div>
+				<p><b>&ltform&gt</b>, a section of the page that is sent to the server with input elements. Has parameters:
+					<ul>
+						<li><b>action</b>, to which file to send the form.</li>
+						<li><b>method</b>, with which request to send the data.</li>
+					</ul>
+				</p>
+				<label><b>&ltlabel&gt</b>, describes an input element in a form.
+				<br>
+				<label><b>&ltinput&gt</b>, puts an input element of various types with parameters:
+					<ul>
+						<li><b>type</b>, can be text, password, email, url, number, tel, search, checkbox, radio, range, button, submit, reset, file, color, date, time, month, week, datetime-local, and hidden.</li>
+						<li><b>name</b>, the key in the key value pairs that the browser sends.</li>
+						<li><b>placeholder</b>, this is the placeholder text until text is inserted.</li>
+						<li><b>value</b>, some elements have specific values you can assign.</li>
+					</ul>
+				</p>
+				<label>name</label>
+				<input type="text" name="name" placeholder="input text here">
+				<br>
+				<label>surname</label>
+				<input type="text" name="surname">
+				<br>
+				<label>email</label>
+				<input type="text" name="email">
+				<br>
+				<label>password</label>
+				<input type="password" name="password" placeholder="required">
+				<br>
+				<label>tel</label>
+				<input type="tel" name="tel">
+				<br>
+				<label>date</label>
+				<input type="date" name="date">
+				<br>
+				<input type="submit" name="submit" value="Submit">
+			</div>
+		</form>
+		<hr>
+		<button><b>&ltbutton&gt</b>, a simple button, needs a programming language to have functionality.</button>
+		<p><b>&ltimg&gt</b>, a image tag that is self closing uses:
+			<ul>
+				<li><b>src</b>, the source path of the image.</li>
+				<li><b>alt</b>, the path of the alternative image if source isn't found.</li>
+				<li><b>width</b>, the pixel width of the image.</li>
+				<li><b>height</b>, the pixel height of the image.</li>
+				<li>they can also we wrapped around anchor tags.</li>
+			</ul>
+		</p>
+		<img src="image.webp" alt="image.webp" width="300" height"300">
+		<blockquote cite="kripticni">
+			<b>&ltblockquote&gt</b>, used to quote some text, with the cite parameter which references who you are citing.
+		</blockquote>
+		<p><b>&ltabbr&gt</b>, used to abbreviate text with the title parameter in <abbr title="HyperText Markup Language">html</abbr>.</p>
+		<p>There is lots of semantic tags in html, used for specific parts of the page such as <b>header, nav, section, aside, article, details, footer, main</b>.</p>
+	</body>
+</html>
