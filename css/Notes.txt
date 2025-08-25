@@ -1,0 +1,91 @@
+html comments
+<!-- comment -->
+
+either the <style> tag
+or the <h1 style="...">
+
+or external css in a file
+<link rel="stylesheet" type="text/css" href="dir/file">
+
+h1 {
+ key:value;
+}
+
+you can use px, em or %, em and % is used for responsiveness
+
+keys
+background
+background-color
+color
+font-family
+font-size: Xpx
+font-weight: normal
+font: 
+line-height: (space between lines)
+margin: auto, 0
+width: px/em/%
+
+there are also html classes and any tag can have class="classname", class and id are the same thing, but by convention ids should only be used once and be unique
+
+to target a class we use 
+.classname{
+  ...
+}
+X = margin->border->padding
+Y = top bottom left right
+Z = radius width height...
+X-Y: px/em/% color type
+X-Y-Z: specific
+X: 4 args
+
+for curved edges there is radius
+borders can have properties like dotted, solid
+at the top of the file doing, 
+applies to all classes
+
+*{
+  ...
+}
+
+you can also style specific tags within 
+classes
+
+.classname tag{
+  ...
+}
+
+text-decoration: underline/italic/...
+text-transform: method
+text-spacing: px/em/%
+text-align: left/center/right
+word-spacing: px/em/%
+
+there is different states for certain tags in CSS, for example 
+a:hover, a:active, a:visited
+display:block/inline
+
+you can also target for certain properties
+.classname input[type="text"]{
+  ..
+}
+
+and even multipul things
+.classname button, .classname inpuf{
+  ..
+}
+
+box-sizing:border-box better calculation
+
+to target ids, we use #
+#idname {
+  ..
+}
+
+position: static/relative/absolute/fixed/initial/inherit
+
+background-image:url(...)
+background-repeat: no-repeat
+background-position: center center or px or em...
+
+for list
+li:first-child, li:last-child, li-nthchild(X/even/odd)
