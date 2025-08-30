@@ -5,9 +5,9 @@ the target will be to make the learning experience
 as practical as possible and to have a repository  
 that others could use to learn more about these languages.  
 
-Personally, I'm learning about web programming
+Personally, I'm learning about web programming  
 to improve at web hacking/exploitation but also  
-for versatility and the generalist knowledge a 
+for versatility and the generalist knowledge a  
 pentester/hacker is required to have.  
 
 # Target
@@ -15,11 +15,11 @@ pentester/hacker is required to have.
 Made for quick learners and programmers that already  
 have experience in a lot of languages, and anyone  
 who picks things up quickly.  
-Aims to astablish foundations through fast and quality
-courses and then finish up the said languages with the
+Aims to astablish foundations through fast and quality  
+courses and then finish up the said languages with the  
 documentation for the language itself, while also  
 leaving a website to which the source code itself  
-will serve as a cheatsheet to.
+will serve as a cheatsheet to.  
 
 # Languages
 
