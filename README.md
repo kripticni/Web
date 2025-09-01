@@ -31,6 +31,7 @@ will only support the ordinary web trio:
 
 But in the future, looking forward to expand to:
 - A web development framework or library
+- Tailwind CSS
 - PHP
 - TypeScript
 
@@ -42,3 +43,4 @@ Recommended to watch or follow along with the following.
 - [HTML Tags Documentation](https://www.w3schools.com/tags/)
 - [CSS Documentation](https://www.w3schools.com/cssref/index.php)
 - [Alternative CSS Documentation](https://cssreference.io/)
+- [JavaScript Advanced Crash Course](https://www.youtube.com/watch?v=TjjKcgtlsY8)
