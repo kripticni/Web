@@ -1,0 +1,166 @@
+#background {
+	margin: 0;
+	height: 100vh;
+	background-size: cover; /* scaling */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../assets/images/background.jpg");
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#finalContainer {
+	width: 70vw;
+	height: 19.5vh;
+}
+
+#statusContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#statusContainer input[type="text"] {
+    width: 80px;
+    height: 40px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px; 
+    padding: 5px;
+    color: white;
+    padding: 0;
+}
+
+.quadrant {
+	position: absolute;
+	display: block;
+
+	height: 30vh;
+	width: 30vw;
+	
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+
+	padding: 0;
+}
+
+.hiddenText {
+	background-color: #00226c;
+	color: white;
+	border: 2px solid #00a8ff;
+	outline: 4px solid #8992ac;
+	outline-offset: 2px;
+	padding: 10px 0px 10px 0px;
+
+	cursor: pointer;
+
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+
+	display: block;
+
+	margin-bottom: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+
+	width: 92%;
+	box-sizing: border-box;
+
+	/* transform: translateX(4%); */
+}
+
+.revealedText {
+	background-color: #00a8ff;
+	color: yellow;
+	border: 2px solid #00226c;
+	outline: 2px solid #8992ff;
+	outline-offset: 1px;
+	padding: 10px 0px 10px 0px;
+
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+
+	display: block;
+
+	margin-bottom: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+
+	width: 92%;
+	box-sizing: border-box;
+
+	/* transform: translateX(4%); */
+}
+
+#final {
+	transform: translateY(10%);
+	width: 100%;
+	height: 100%;
+
+	font-size: 1.5em;
+	padding: 10px;
+
+	box-sizing: border-box;
+}
+
+.blueTeam {
+	background-color: #00a8ff;
+	border-radius: 3px;
+}
+
+.redTeam {
+	background-color: #ff3f00;
+	border-radius: 3px;
+}
+
+#redScore {
+	background-color: #ff3f00;
+}
+
+#blueScore{
+	background-color: #00a8ff;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
