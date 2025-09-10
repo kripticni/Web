@@ -5,6 +5,7 @@
 	</head>
 	<body>
 		<h1>List of html elements</h1>
+		<p><b>&lt!--...--></b>, used to mark a comment in html.</p>
 		<p><b>&lt!DOCTYPE html&gt</b>, is at the start of the source indicating the type of document.</p>
 		<p><b>&lthtml&gt</b>, wraps the entire markup of the page. Its common to add lang="en" for SEO, screen reader support and spell-checking/translation.</p>
 		<p><b>&ltmeta&gt</b>, means metadata about the document its common to set charset="UTF-8" to be able to render all characters and viewport settings such as &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt for mobile, and set a description and keywords for SEO.</p>
@@ -122,6 +123,49 @@
 		</blockquote>
 		<p><b>&ltabbr&gt</b>, used to abbreviate text with the title parameter in <abbr title="HyperText Markup Language">html</abbr>.</p>
 		<p>There is lots of semantic tags in html, used for specific parts of the page such as <b>header, nav, section, aside, article, details, footer, main</b>.</p>
-
+		<p><b>&ltaddress&gt</b>, used to mark the contact info of the <address>author/owner</address>.</p>
+		<p><b>&ltarea&gt</b>, defines areas within an image with clickable links/interactions.</p>
+		<p><b>&ltbdi&gt</b>, bi-directional isolation, doesnt allow the text inside to change direction of the entire paragraph, example: <bdi>إيان</bdi>.</p>
+		<p><b>&ltbdo&gt</b>, overrides the text <bdo dir="rtl">direction</bdo>.</p>
+		<cite><b>&ltcite&gt</b>, defines the title of a work.</cite>
+		<code><b>&ltcode&gt</b>, defines a piece of code.</code>
+		<p><b>&ltdel&gt</b>, <del>crosses out the text as deleted from a document, its &lts&gt with semantic meaning</del>.</p>
+		<p><dfn>&ltdfn&gt</dfn>, clarifies which word will be defined within the paragraph.</p>
+		<p><b>&ltins&gt</b>, <ins>underlines</ins> the text, semantic meaning of &ltu&gt.</p>
+		<p><b>&ltkbd&gt</b>, tells the user that the following text is actually <kbd>keyboard input</kbd>.</p>
+		<p><b>&ltmark&gt</b>, <mark>highlights the given text</mark>.</p>
+		<p><b>&ltmeter&gt</b>, a simple progress bar, example: <meter value="5" min="0" max="10">5/10</meter>.</p>
+		<p><b>&ltfor&gt</b>, used for semantically labeling the elements to which id they use.</p>
+		<p><b>&ltid&gt</b>, tells the element which css id to use.</p>
+		<p><b>&ltclass&gt</b>, tells the element which css classes to use.</p>
+		<p><b>&ltprogress&gt</b>, shows the progress of a task like downloading, example: <progress value="50" max="100">50%</progress>.</p>
+		<pre><b>&ltpre&gt</b>, allows for the usage of preformatted text (html doesn't format it).</pre>
+		<p><b>&ltq&gt</b>, <q>a small quotation with quotation marks</q>.</p>
+		<p><b>&ltruby&gt</b>, defines ruby annotation for East Asian typography, example: 
+<ruby>
+漢 <rt> ㄏㄢˋ </rt>
+</ruby>.</p>	
+		<p><b>&ltrt&gt</b>, explains the pronunciation of characters for East Asian typography. Used inside of ruby to say what text should be written.</p>
+		<p><b>&ltrp&gt</b>, defines what to show in browsers that don't allow for ruby notation, example: <ruby>
+漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
+</ruby></p>
+		<p><b>&lts&gt</b>, <s>strike through text</s>.</p>
+		<p><b>&ltsamp&gt</b>, <samp>sample output of a program</samp>.</p>
+		<p><b>&ltsmall&gt</b>, <small>gives small text, will probably be deprecated</small>.</p>
+		<p><b>&ltsub&gt</b>, <sub>subscripts the text</sub>.</p>
+		<p><b>&ltsup&gt</b>, <sup>supscripts the text</sup>.</p>
+		<p><b>&lttemplate&gt</b>, hidden html content that you can later display with javascript on demand. example: <code>let clon = temp.content.cloneNode(true);</code></p>
+		<p><b>&lttime&gt</b>, puts time/datetime, <time>10:10</time> / <time datetime="1970-01-01 00:00">Unix Epoch</time>, basically only semantic meaning, it isn't supported in most browsers.</p>
+		<p><b>&ltu&gt</b>, <u>underlines the text</u>.</p>
+		<p><b>&ltvar&gt</b>, <var>formats the text as if it were a variable (mathematical)</var>.</p>
+		<p><b>&ltwbr&gt</b>, where is it okay to add a linebreak, for example for very long words.</p>
+		<p><b>&lt &gt</b>, .</p>
+		<p><b>&lt &gt</b>, .</p>
+		<p><b>&lt &gt</b>, .</p>
+		<p><b>&lt &gt</b>, .</p>
+		<p><b>&lt &gt</b>, .</p>
+		<p><b>&lt &gt</b>, .</p>
+		<p><b>&lt &gt</b>, .</p>
+		<p><b>&lt &gt</b>, .</p>
 	</body>
 </html>
