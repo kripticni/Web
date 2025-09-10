@@ -68,8 +68,11 @@
 		<p><b>&ltspan&gt</b>, opposed to div is an inline container.</p>
 
 		<form action="process.js" method="POST">
-			<div>
+			<fieldset>
+				<legend>Legend for Form:</legend>
 				<p><b>&ltform&gt</b>, a section of the page that is sent to the server with input elements. Has parameters:
+				<p><b>&ltfieldset&gt</b>, a semantic container for grouping user input or form controls, also gives a style.</p>
+				<p><b>&ltlegend&gt</b>, defines the title/legend for the fieldset.</p>
 					<ul>
 						<li><b>action</b>, to which file to send the form.</li>
 						<li><b>method</b>, with which request to send the data.</li>
@@ -103,11 +106,31 @@
 				<label>date</label>
 				<input type="date" name="date">
 				<br>
+				<datalist id="datalist">
+					<option value="<datalist>, makes a input box with predefined options you can choose from.">1st option</option>
+					<option value="value, the value which will be put inside the textbox">2nd option</option>
+					<option value="the datalist must have an id, and the input element must have a attribute called list with the same id"></option>
+				</datalist>
+				<input list="datalist" placeholder="<datalist> tag, click me!">
+				<br>
+				<output name="outputTag"><b>&ltoutput&gt</b>, formats text as if it were an output for something, with the attribute name makes a javascript variable.</output>
+				<br>
 				<input type="submit" name="submit" value="Submit">
-			</div>
+			</fieldset>
 		</form>
 		<hr>
 		<button><b>&ltbutton&gt</b>, a simple button, needs a programming language to have functionality.</button>
+		<textarea><textarea>, multiline text input control.</textarea>
+		<select name="<select>">
+			<optgroup label="HTML tags">
+				<option value="1st option"><b>&ltselect&gt</b>, creates a drop-down list with options.</option>
+				<option value="2nd option"><b>&ltoption&gt</b>, used to declare which options are available and their text inside a select tag.</option>
+			</optgroup>
+			<optgroup label="Attributes">
+				<option value="3rd option"><b>value</b>, argument used to put a specific value for when you access the element with javascript</option>
+				<option value="4rd option"><b>label</b>, says the text for the optgroup tag.</option>
+			</optgroup>
+		</select>
 		<p><b>&ltimg&gt</b>, a image tag that is self closing uses:
 			<ul>
 				<li><b>src</b>, the source path of the image.</li>
@@ -117,7 +140,44 @@
 				<li>they can also we wrapped around anchor tags.</li>
 			</ul>
 		</p>
-		<img src="images/image.webp" alt="images/image-not-found.webp" width="300" height"300">
+		<img src="assets/images/image.webp" alt="assets/images/image-not-found.webp" width="300" height="300">
+		<p><b>&ltfigure&gt</b>, specifies self-contained content, more useful with css.</p>
+		<figure>
+			<img src="assets/images/image.webp" alt="assets/images/image-not-found.webp" width="300" height="300"</img>
+			<figcaption><b>&ltfigcaption&gt</b>, a paragraph inside a figure tag</figcaption>
+		</figure>
+		<p><b>&ltsource&gt</b>, from which file/url to get the source to be displayed accross multiple tags (audio, video, picture...), also multiple can be defined and the browser will use the first one that it supports, to set a source use the srcset attribute (for picture). Otherwise use src when it only needs to display one file (audio, video...). To query for conditions use the media attribute.</p>
+		<p><b>&ltpicture&gt</b>, used to define a window in which the first source tag that fits the current condition of the page is inputted in, if there is no source tag that fits, instead an img tag is used (it must always be at the bottom).</p>
+		<picture>
+			<source srcset="assets/images/gray-picture.webp" media="(min-width:720px)">
+			<source srcset="assets/images/black-picture.webp" media="(min-width:320px)">
+			<img src="assets/images/image.webp" alt="assets/images/image-not-found.webp" width="300" height="300"></img>
+		</picture>
+		<p><b>&ltsvg&gt</b>, used to create svg elements, along with tags like circle, ellipse and etc.</p>
+		<p><b>&ltaudio&gt</b>, used to embed sound content. Options:
+			<ul>
+				<li><b>controls</b>, shows the default controls</li>
+				<li><b>autoplay</b>, autoplays</li>
+				<li><b>loop</b>, repeats when it ends</li>
+				<li><b>muted</b>, starts off as muted</li>
+				<li><b>preload</b>, how much to load upfront, can be none/metadata/auto.</li>
+				<li><b>src</b>, audio file to play</li>
+				<li><b>crossorigin</b>, if loading audio from another domain, can be anonymous/use-credentials</li>
+			</ul>
+		</p>
+		<audio controls>
+			<source src="assets/audio/kick.mp3" type="audio/mp3">
+			<source src="assets/audio/meow.ogg" type="audio/ogg">
+		</audio>
+		<p><b>&lttrack&gt</b>, used to add subtitles/captions to audio or video, uses the vtt format.</p>
+		<p><b>&lt &gt</b>, .</p>
+		<p><b>&lt &gt</b>, .</p>
+		<p><b>&lt &gt</b>, .</p>
+		<p><b>&lt &gt</b>, .</p>
+		<p><b>&lt &gt</b>, .</p>
+		<p><b>&lt &gt</b>, .</p>
+		<p><b>&ltcanvas&gt</b>, creates a canvas in which you can draw with javascript.</p>
+		<p><b>&ltmap&gt</b>, used to set coordinates for clickable areas within an img tag, the img tag must have the attribute usemap with #mapname and the map must have the name attribute. Within the map tag, you need to use the area tag with the shape and coords attributes to define the clickable areas and then href it to the correct page.</p>
 		<blockquote cite="kripticni">
 			<b>&ltblockquote&gt</b>, used to quote some text, with the cite parameter which references who you are citing.
 		</blockquote>
@@ -128,6 +188,7 @@
 		<p><b>&ltbdi&gt</b>, bi-directional isolation, doesnt allow the text inside to change direction of the entire paragraph, example: <bdi>إيان</bdi>.</p>
 		<p><b>&ltbdo&gt</b>, overrides the text <bdo dir="rtl">direction</bdo>.</p>
 		<cite><b>&ltcite&gt</b>, defines the title of a work.</cite>
+		<br>
 		<code><b>&ltcode&gt</b>, defines a piece of code.</code>
 		<p><b>&ltdel&gt</b>, <del>crosses out the text as deleted from a document, its &lts&gt with semantic meaning</del>.</p>
 		<p><dfn>&ltdfn&gt</dfn>, clarifies which word will be defined within the paragraph.</p>
@@ -159,7 +220,8 @@
 		<p><b>&ltu&gt</b>, <u>underlines the text</u>.</p>
 		<p><b>&ltvar&gt</b>, <var>formats the text as if it were a variable (mathematical)</var>.</p>
 		<p><b>&ltwbr&gt</b>, where is it okay to add a linebreak, for example for very long words.</p>
-		<p><b>&lt &gt</b>, .</p>
+		<p><b>&ltiframe&gt</b>, creates an inline frame in which you can embed another document, use css to style it.</p>
+		<iframe src="https://github.com/kripticni/Web" title="Kripticni's Github"></iframe>
 		<p><b>&lt &gt</b>, .</p>
 		<p><b>&lt &gt</b>, .</p>
 		<p><b>&lt &gt</b>, .</p>
