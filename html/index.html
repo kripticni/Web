@@ -9,8 +9,28 @@
 		<p><b>&lt!DOCTYPE html&gt</b>, is at the start of the source indicating the type of document.</p>
 		<p><b>&lthtml&gt</b>, wraps the entire markup of the page. Its common to add lang="en" for SEO, screen reader support and spell-checking/translation.</p>
 		<p><b>&ltmeta&gt</b>, means metadata about the document its common to set charset="UTF-8" to be able to render all characters and viewport settings such as &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt for mobile, and set a description and keywords for SEO.</p>
+		<p><b>&ltbase&gt</b>, specifies a base url for all future urls.</p>
+		<p><b>&ltscript&gt</b>, used for linking external javascript.</p>
+		<p><b>&ltnoscript&gt</b>, used for giving alternate content for users with no client-side script support.</p>
+		
+		<p><b>&ltlink&gt</b>, the link tag is used for many functionalities, most commonly for linking with external css, you use it with the rel attribute and it support:
+		<ul>
+			<li>stylesheet</li>
+			<li>icon</li>
+			<li>preload</li>
+			<li>prefetch</li>
+			<li>dns-prefetch</li>
+			<li>preconnect</li>
+			<li>alternate</li>
+			<li>manifest</li>
+			<li>canonical</li>
+			<li>apple-touch-icon</li>
+		</ul>
+		</p>
+		<p><b>&ltstyle&gt</b>, used to set internal css into the html document.</p>
 		<p><b>&lthead&gt</b>, only changes the display text of the page in the browser</p>
 		<p><b>&ltbody&gt</b>, the actual contents of the page.</p>
+		<p><b>&lthgroup&gt</b>, used to embed a heading and paragraph inside to show that they are realted.</p>
 		<p><b>&lth1-6&gt</b>, headings differing in size from biggest to smallest.</p>
 		<p><b>&ltp&gt</b>, a basic paragraph.</p>
 		<p><b>&ltbr&gt</b>, puts a<br>line break.</p>
@@ -23,6 +43,17 @@
 			<li><b>&ltol&gt</b>, ordered list, has its list elements.</li>
 			<li><b>&ltli&gt</b>, a list element.</li>
 		</ul>
+		<hr>
+		<dl>
+			<dt>&ltdl&gt</dt>
+			<dd>Used to make a list with descriptive list.</dd>
+			<dt>&ltdt&gt</dt>
+			<dd>Used to give a title for a descriptive list item.</dd>
+			<dt>&ltdd&gt</dt>
+			<dd>Used to give the description for said item.</dd>
+		</dl>
+		<hr>
+		<p><b>&ltmenu&gt</b>, a unordered list with semantic meaning, it most commonly represents a list of actions a user can take.</p>
 		<p><b>&lta&gt</b>, used to create <a target="_blank" href="https://en.wikipedia.org/wiki/Hyperlink">hyperlinks</a> to either the same page or a new one and for downloading files. It has the following atributes and options for them:<br>
 		<ol>
 			<li><b>href</b>, for the link or heading of the page.</li>
@@ -33,6 +64,7 @@
 		</ol>
 		</p>
 		<table>
+			<caption>Explanation of all table tags</caption>
 			<thead>
 				<tr>
 					<th>HTML element</th>
@@ -60,12 +92,27 @@
 					<td>&lttd&gt</td>
 					<td>Defines what goes into the cell of the table.</td>
 				</tr> 
+				<tr>
+					<td>&ltcolgroup&gt</td>
+					<td>Specifies a group of one or more columns for formatting.</td>
+				</tr>
+				<tr>
+					<td>&ltcol&gt</td>
+					<td>Used to apply styles to a column within colgroup.</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>&lttfoot&gt</td>
+					<td>The footer part of a table.</td>
+				</tr>
+			</tfoot>
 		</table>
 		<hr>
 		<p><b>&lthr&gt</b>, puts a horizontal line.</p>
 		<hr>
 		<p><b>&ltdiv&gt</b>, used to group up content and takes the full width.</p>
-		<p><b>&ltspan&gt</b>, opposed to div is an inline container.</p>
+		<p><b>&ltspan&gt</b>, opposed to div is an inline container, easy to manipulate with css.</p>
 
 		<form action="process.js" method="POST">
 			<fieldset>
@@ -131,6 +178,8 @@
 				<option value="4rd option"><b>label</b>, says the text for the optgroup tag.</option>
 			</optgroup>
 		</select>
+		<p><b>&ltembed&gt</b>, used for external resources, but most already have their own dedicated tags so it isn't very common.</p>
+		<p><b>&ltobject&gt</b>, used for adding plugins to extend the default browser functionality but nowadays isn't supported in most browsers, with the param tag you can define the parameters for the said object.</p>
 		<p><b>&ltimg&gt</b>, a image tag that is self closing uses:
 			<ul>
 				<li><b>src</b>, the source path of the image.</li>
@@ -169,20 +218,33 @@
 			<source src="assets/audio/kick.mp3" type="audio/mp3">
 			<source src="assets/audio/meow.ogg" type="audio/ogg">
 		</audio>
+		<p><b>&ltvideo&gt</b>, used to show video, can be used with the source tag to allow the browser to choose which one is best but also just the src attribute if it needs to show only one, options:
+		<ul>
+			<li><b>controls</b>, shows the default controls</li>
+			<li><b>autoplay</b>, autoplays</li>
+			<li><b>loop</b>, repeats when it ends</li>
+			<li><b>muted</b>, starts off as muted</li>
+			<li><b>preload</b>, how much to load upfront, can be none/metadata/auto.</li>
+			<li><b>src</b>, audio file to play</li>
+			<li><b>crossorigin</b>, if loading audio from another domain, can be anonymous/use-credentials</li>
+			<li><b>poster</b>, image before the video starts</li>
+			<li><b>width/height</b>, the width and height of the video.</li>
+			<li><b>playsinline</b>, prevents full-screen on mobile</li>
+		</ul>
+		</p>
+		<video controls src="assets/video/beach-video.mp4" width="400" height="300"></video>
 		<p><b>&lttrack&gt</b>, used to add subtitles/captions to audio or video, uses the vtt format.</p>
-		<p><b>&lt &gt</b>, .</p>
-		<p><b>&lt &gt</b>, .</p>
-		<p><b>&lt &gt</b>, .</p>
-		<p><b>&lt &gt</b>, .</p>
-		<p><b>&lt &gt</b>, .</p>
-		<p><b>&lt &gt</b>, .</p>
 		<p><b>&ltcanvas&gt</b>, creates a canvas in which you can draw with javascript.</p>
 		<p><b>&ltmap&gt</b>, used to set coordinates for clickable areas within an img tag, the img tag must have the attribute usemap with #mapname and the map must have the name attribute. Within the map tag, you need to use the area tag with the shape and coords attributes to define the clickable areas and then href it to the correct page.</p>
 		<blockquote cite="kripticni">
 			<b>&ltblockquote&gt</b>, used to quote some text, with the cite parameter which references who you are citing.
 		</blockquote>
 		<p><b>&ltabbr&gt</b>, used to abbreviate text with the title parameter in <abbr title="HyperText Markup Language">html</abbr>.</p>
-		<p>There is lots of semantic tags in html, used for specific parts of the page such as <b>header, nav, section, aside, article, details, footer, main</b>.</p>
+		<hr>
+		<p>There is lots of semantic tags in html, used for specific parts of the page such as <b>header, nav, section, aside, article, details, dialog, footer, main, search, summary, data</b>.</p>
+		<hr>
+		<p><b>&ltdialog&gt</b>, shows a dialog window, if used with open then its shown, and role can be used for accesibility.</p>
+		<p><b>&ltdata&gt</b>, gives machine readable translations for text.</p>
 		<p><b>&ltaddress&gt</b>, used to mark the contact info of the <address>author/owner</address>.</p>
 		<p><b>&ltarea&gt</b>, defines areas within an image with clickable links/interactions.</p>
 		<p><b>&ltbdi&gt</b>, bi-directional isolation, doesnt allow the text inside to change direction of the entire paragraph, example: <bdi>إيان</bdi>.</p>
@@ -222,12 +284,5 @@
 		<p><b>&ltwbr&gt</b>, where is it okay to add a linebreak, for example for very long words.</p>
 		<p><b>&ltiframe&gt</b>, creates an inline frame in which you can embed another document, use css to style it.</p>
 		<iframe src="https://github.com/kripticni/Web" title="Kripticni's Github"></iframe>
-		<p><b>&lt &gt</b>, .</p>
-		<p><b>&lt &gt</b>, .</p>
-		<p><b>&lt &gt</b>, .</p>
-		<p><b>&lt &gt</b>, .</p>
-		<p><b>&lt &gt</b>, .</p>
-		<p><b>&lt &gt</b>, .</p>
-		<p><b>&lt &gt</b>, .</p>
 	</body>
 </html>
