@@ -7,7 +7,6 @@
 
 body, html {
 	height: 100%;
-	overflow:hidden;
 }
 
 #header {
@@ -15,12 +14,18 @@ body, html {
 
 	width: 100%;
 
+	text-align: center;
+
+	border-width: 2px;
+	border-color: #244ee4;
+	border-style: solid;
+
 	background: #28aae0;
 	color: white;
 }
 
 #header h1 {
-	text-align: center;
+	font-size: 3.0em;
 	line-height: normal; 
 }
 
@@ -32,8 +37,9 @@ body, html {
 	background: #010101;
 	color: white;
 
-	padding: 0;
-	margin: 0;
+	border-bottom-width: 8px;
+	border-bottom-style: solid;
+	border-bottom-color: #1b1b1b;
 
 	list-style: none;
 }
@@ -55,6 +61,53 @@ body, html {
 	color: #28aae0;
 }
 
+#main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: #222;
+	color: white;
+
+	border-top-color: #222;
+	border-top-width: 1.6em;
+	border-top-style: solid;
+
+	border-bottom-color: #222;
+	border-bottom-width: 1.6em;
+	border-bottom-style: solid;
+
+	height: auto;
+}
+
+.frame {
+	display: flex;
+	justify-content: center;
+	
+	background: #444;
+	color: white;
+
+	border-radius: 6px;
+	border-color: #ebebed;
+	border-style: solid;
+	border-width: 2px;
+
+	aspect-ratio: 9 / 16;
+	width: 75vw;
+}
+
+@media (max-width: 750px) {
+	.frame {
+		width: 100vw;
+		height: auto;
+		border-width: 1px; 
+	}
+
+	#main {
+		border-width: 0.4em;
+	}
+}
+
 #footer {
 	display: block;
 
@@ -62,6 +115,10 @@ body, html {
 
 	background: gray;
 	color: white;
+
+	border-top-color: #ebebed;
+	border-top-width: 2px;
+	border-top-style: solid;
 
 	text-align: center;
 }
