@@ -44,7 +44,150 @@
 				</span>
 			</div>
 			<div class="item-b">
-				<span>text1</span>
+				<span>align-items</span>
+				<span>defines how to align to the cross axis, determined by flex-direction. options:
+					<ul>
+						<li>flex-start, align at start of the cross axis</li>
+						<li>flex-end, align at end of cross axis</li>
+						<li>center, center of the cross axis</li>
+						<li>baseline, aligns so that the items are above the baseline of the cross axis</li>
+						<li>stretch, fill up the whole space of the cross axis</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>align-self</span>
+				<span>exactly like align-items, but only for a single item, it has the same options and is put inside the element you want to alter.</span>
+			</div>
+			<div class="item-b">
+				<span>flex-basis</span>
+				<span>defines the initial size of the flexbox item. options:
+					<ul>
+						<li>auto, sized based on its content</li>
+						<li>px/em/rem, based on pixels, also wrapped</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>flex-direction</span>
+				<span>defines the cross axis of the flexbox. options:
+					<ul>
+						<li>row, horizontal, left to right</li>
+						<li>row-reverse, horizontal, right to left</li>
+						<li>column, vertical, top down</li>
+						<li>column-reverse, vertical, bottom up</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>flex-wrap</span>
+				<span>single line or multiple line items. options:
+					<ul>
+						<li>nowrap, elements must be on a single line</li>
+						<li>wrap, elements can be on multiple lines if needed</li>
+						<li>wrap-reverse, any new line is above the original one</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>flex-flow</span>
+				<span>shorthand for flex-direction and flex-wrap.</span>
+			</div>
+			<div class="item-b">
+				<span>flex-grow</span>
+				<span>how much to grow if there is available space, the option is the coefficient k of how much that exact element should take up which gets calculated into precentages.</span>
+			</div>
+			<div class="item-a">
+				<span>flex-shrink</span>
+				<span>how much to shrink if there isn't enough space, the option is also the coefficient k.</span>
+			</div>
+			<div class="item-b">
+				<span>justify-content</span>
+				<span>how to align according to the main axis. options:
+					<ul>
+						<li>flex-start, to the start of the container's main axis</li>
+						<li>flex-end, to the end of the container's main axis</li>
+						<li>center, centered along the main axis</li>
+						<li>space-between, remaining space is between the elements</li>
+						<li>space-around, remaining space is before between and after the elements</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>order</span>
+				<span>the number that says where in the item list should the item be, it can be any large number</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>grid</h3>
+					<p>how to make a grid with css</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>grid-area</span>
+				<span>short for row-start, column-start, row-end, column-end, or for naming items. options:
+					<ul>
+						<li>auto, automatically sets for items</li>
+						<li>main, can be used to give items a name</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>grid-auto-columns</span>
+				<span>defines the size of columns that are not inside of grid-template-columns or grid-template-areas, can be auto or pixels/em/rem.</span>
+			</div>
+			<div class="item-a">
+				<span>grid-auto-rows</span>
+				<span>defines the size of rows that are not inside of grid-template-rows or grid-template-areas, can be auto or pixels/em/rem.</span>
+			</div>
+			<div class="item-b">
+				<span>grid-auto-flow</span>
+				<span>defines the position of auto generated items. options
+					<ul>
+						<li>row, adds to its own row</li>
+						<li>column, adds to its own column</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>grid-column-end</span>
+				<span>the column end position of a grid item, before which column to end.</span>
+			</div>
+			<div class="item-b">
+				<span>grid-row-end</span>
+				<span>the row end position of a grid item, before which row to end.</span>
+			</div>
+			<div class="item-a">
+				<span>grid-row-gap</span>
+				<span>defines the gap between rows, can be pixel/em/rem.</span>
+			</div>
+			<div class="item-b">
+				<span>grid-column-gap</span>
+				<span>defines the gap between columns, can be pixel/em/rem.</span>
+			</div>
+			<div class="item-a">
+				<span>grid-gap</span>
+				<span>shorthand for grid-row-gap and grid-column-gap.</span>
+			</div>
+			<div class="item-b">
+				<span>grid-template-areas</span>
+				<span>defines areas within a grid container, they can be referenced when placing a grid item. It can be none, or a list of strings which represent which cell is what.</span>
+			</div>
+			<div class="item-a">
+				<span>grid-template-columns</span>
+				<span>specify the width of each column in pixels/em/rem or auto.</span>
+			</div>
+			<div class="item-b">
+				<span>grid-template-rows</span>
+				<span>specify the width of each row in pixels/em/rem or auto.</span>
+			</div>
+			<div class="item-a">
+				<span>grid-template</span>
+				<span>a shorthand for grid-template-rows, grid-template-columns and grid-template-area.</span>
+			</div>
+			<div class="item-b">
+				<span>grid</span>
+				<span>a shorthand for grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and grid-auto-flow.</span>
 			</div>
 		</div>
 	</main>
