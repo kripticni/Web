@@ -44,7 +44,7 @@ body, html {
 	list-style: none;
 }
 
-#nav ul, li {
+#nav ul, #nav li {
 	display: inline;
 	font-size: 18px;
 	margin-left: 2em;
@@ -128,7 +128,7 @@ body, html {
 }
 
 .item-class p {
-	font-size: 1.0em;
+	font-size: 1.2em;
 	line-height: 1.0em;
 
 	color: #ebebed;
@@ -144,14 +144,40 @@ body, html {
 	width: 100%;
 
 	text-align: left;
+	line-height: 1.0em;
+
 	gap: 1em;
-	margin-right: 1em;
-	font-size: 1.5em;
+	font-size: 1.4em;
 
-	color: #030604;
+	color: #ebebed;
 
-	padding-left: 0.8em;
-	padding-right: 0.8em;
+	padding: 0.4em;
+}
+
+.item-a span, .item-b span {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 1.0em;
+}
+
+.item-a span:first-child,
+.item-b span:first-child {
+	margin: auto;
+}
+
+.item-a span:nth-child(2),
+.item-b span:nth-child(2) {
+	flex: 1;
+}
+
+.item-a ul, .item-a li
+.item-b ul, .item-b li {
+	display: block;
+	list-style: none;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	line-height: 0.5em;
 }
 
 .item-a {
