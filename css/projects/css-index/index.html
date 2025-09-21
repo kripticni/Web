@@ -189,14 +189,184 @@
 				<span>grid</span>
 				<span>a shorthand for grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and grid-auto-flow.</span>
 			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>colors</h3>
+					<p>used to color various html tags and more</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>accent-color</span>
+				<span>sets the accent/primary color on specific tags, like radiobuttons, progress bars etc... options:
+					<ul>
+						<li>color, rgb, hex, html...</li>
+						<li>auto, default</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>background-color</span>
+				<span>defines the background color of an element. options:
+					<ul>
+						<li>color, rgb, hex, html...</li>
+						<li>transparent, default</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>caret-color</span>
+				<span>specifies the color of the cursor in inputs, textareas, or anything editable.</span>
+			</div>
+			<div class="item-b">
+				<span>color</span>
+				<span>the foreground/text color of an element.</span>
+			</div>
+			<div class="item-a">
+				<span>color-scheme</span>
+				<span>indicates which operating system color scheme an element has. options are only (optional light/dark to say what to render with, and light dark says that it can be rendered with both.</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>filter</h3>
+					<p>effects for pictures and backgrounds</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>the filter type</span>
+				<span>which filter to apply, options:
+					<ul>
+						<li>blur()</li>
+						<li>brightness()</li>
+						<li>contrast()</li>
+						<li>drop-shadow()</li>
+						<li>grayscale()</li>
+						<li>hue-rotate()</li>
+						<li>invert()</li>
+						<li>opacity()</li>
+						<li>saturate()</li>
+						<li>sepia()</li>
+						<li>url(), this allows for a custom url with a filter</li>
+					</ul>
+			</div>
+			<div class="item-b">
+				<span>filter</span>
+				<span>used to define effects for elements/pictures before they are displayed.</span>
+			</div>
+			<div class="item-a">
+				<span>backdrop-filter</span>
+				<span>apply a graphical effect behind an element.</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>control</h3>
+					<p>used for control of certain properties in css</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>all</span>
+				<span>used for reseting all properties, except unicode-bidi and direction, to: initial, inherit, or unset</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>animation</h3>
+					<p>beautiful animations for your elements</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>animation</span>
+				<span>shorthand for all animation-* properties.</span>
+			</div>
+			<div class="item-b">
+				<span>animation-delay</span>
+				<span>delay before the start of the animation.</span>
+			</div>
+			<div class="item-a">
+				<span>animation-direction</span>
+				<span>should the animation be played: 
+					<ul>
+						<li>normal</li>
+						<li>reverse</li>
+						<li>alternate, forward then backward</li>
+						<li>alternate-reverse, first backwards, then cycles</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>animation-duration</span>
+				<span>how long does an animation last, can be:
+					<ul>
+						<li>time, ms or s</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>animation-fill-mode</span>
+				<span>specifies a style when the animation is not playing. options:
+					<ul>
+						<li>none</li>
+						<li>forwards, last keyframe</li>
+						<li>backwards, first keyframe</li>
+						<li>both, extends the property in both directions</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>animation-iteration-count</span>
+				<span>number of repetitions, infinite or a number.</span>
+			</div>
+			<div class="item-a">
+				<span>animation-name</span>
+				<span>specifies a name for the @keyframes animation.</span>
+			</div>
+			<div class="item-b">
+				<span>animation-play-state</span>
+				<span>is the animation playing or pause.</span>
+			</div>
+			<div class="item-a">
+				<span>animation-timing-function</span>
+				<span>decides which time function to use for the animation. options:
+					<ul>
+						<li>linear</li>
+						<li>ease, default, slow-&gtfast-&gtslow</li>
+						<li>ease-in, slow start</li>
+						<li>ease-out, slow end</li>
+						<li>ease-in-out, slow end and start</li>
+						<li>step-start, steps(1, start)</li>
+						<li>step-end, steps(1, end)</li>
+						<li>steps(int, step-position), the stepping function</li>
+						<li>cubic-bezier(n,n,n,n), cubic-bezier function, values are 0-1</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>size</h3>
+					<p>the sizing settings for elements</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>aspect-ration</span>
+				<span>specifies the preferred aspect ratio, given as a x / y</span>
+			</div>
 		</div>
 	</main>
 
 	<footer id="footer">
 		<p>Copyright &copy 2025 <a href="https://github.com/kripticni" target="_blank" rel="noopener noreferrer">kripticni</a></p>
-		<p>Source code found at <a href="https://github.com/kripticni/Web/tree/main/css/projects/css-index" target="_blank" rel="noopener noreferrer">Github</a>
-		<p>Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.txt" target="_blank" rel="noopener noreferrer">GPL 3.0</p>
-</a>
+		<p>Source code found at <a href="https://github.com/kripticni/Web/tree/main/css/projects/css-index" target="_blank" rel="noopener noreferrer">Github</a></p>
+		<p>Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.txt" target="_blank" rel="noopener noreferrer">GPL 3.0</a></p>
 	</footer>
 </body>
 </html>
