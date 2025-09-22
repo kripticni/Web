@@ -117,6 +117,10 @@
 				<span>order</span>
 				<span>the number that says where in the item list should the item be, it can be any large number</span>
 			</div>
+			<div class="item-b">
+				<span>gap</span>
+				<span>shorthand for row-gap and column-gap, can also be used for multi-column layouts and grids.</span>
+			</div>
 			<div class="item-class">
 				<hgroup>
 					<h3>grid</h3>
@@ -189,6 +193,27 @@
 				<span>grid</span>
 				<span>a shorthand for grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and grid-auto-flow.</span>
 			</div>
+			<div class="item-a">
+				<span>justify-items</span>
+				<span>how to align items inside a grid:
+					<ul>
+						<li>legacy, legacy HTML center</li>
+						<li>normal, depends on layout similar to stretch</li>
+						<li>stretch, stretches to fill grid cell if width is not set</li>
+						<li>start</li>
+						<li>end</li>
+						<li>left</li>
+						<li>right</li>
+						<li>center</li>
+						<li>overflow-alignment, safe sets to start on overflow, unsafe does nothing</li>
+						<li>baseline alignment, how to align to the basement of the parent</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>justify-self</span>
+				<span>how to align a gird item within its grid cell in the inline direction.</span>
+			</div>
 			<div class="item-class">
 				<hgroup>
 					<h3>colors</h3>
@@ -228,6 +253,24 @@
 			<div class="item-a">
 				<span>color-scheme</span>
 				<span>indicates which operating system color scheme an element has. options are only (optional light/dark to say what to render with, and light dark says that it can be rendered with both.</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>image</h3>
+					<p>control how images render</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>image-rendering</span>
+				<span>specific algorithm for image scaling. options:
+					<ul>
+						<li>auto</li>
+						<li>smooth</li>
+						<li>high-quality, smooth algorithm</li>
+						<li>crisp-edges, preserve edges and contrast</li>
+						<li>pixelated, nearest-neighbor</li>
+					</ul>
+				</span>
 			</div>
 			<div class="item-class">
 				<hgroup>
@@ -357,8 +400,20 @@
 				</hgroup>
 			</div>
 			<div class="item-a">
-				<span>aspect-ration</span>
+				<span>aspect-ratio</span>
 				<span>specifies the preferred aspect ratio, given as a x / y</span>
+			</div>
+			<div class="item-b">
+				<span>height</span>
+				<span>determines the height, length or %.</span>
+			</div>
+			<div class="item-b">
+				<span>inline-size</span>
+				<span>size of an element in the inline direction, determined by writing-mode.</span>
+			</div>
+			<div class="item-b">
+				<span>block-size</span>
+				<span>size of an element in the block direction, determined by writing-mode.</span>
 			</div>
 			<div class="item-class">
 				<hgroup>
@@ -375,6 +430,10 @@
 				<span>specifies the size of an element in the block direction, determined by writing-mode property, takes length.</span>
 				</span>
 			</div>
+			<div class="item-b">
+				<span>direction</span>
+				<span>doesn't change or affect writing mode but specifies the text/writing direction to ltr or rtl.</span>
+			</div>
 			<div class="item-class">
 				<hgroup>
 					<h3>position</h3>
@@ -382,14 +441,52 @@
 				</hgroup>
 			</div>
 			<div class="item-a">
-				<span>bottom</span>
-				<span>sets the element at the bottom of its parent. options:
+				<span>top</span>
+				<span>sets the vertical position within a parent, has no effect on non-positioned elements. options:
 					<ul>
 						<li>auto</li>
 						<li>length</li>
 						<li>%</li>
 					</ul>
 				</span>
+			</div>
+			<div class="item-b">
+				<span>bottom</span>
+				<span>sets the vertical position within a parent, has no effect on non-positioned elements. options:
+					<ul>
+						<li>auto</li>
+						<li>length</li>
+						<li>%</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>left</span>
+				<span>sets the horizontal position within a parent, has no effect on non-positioned elements. options:
+					<ul>
+						<li>auto</li>
+						<li>length</li>
+						<li>%</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>right</span>
+				<span>sets the horizontal position within a parent, has no effect on non-positioned elements. options:
+					<ul>
+						<li>auto</li>
+						<li>length</li>
+						<li>%</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>inset</span>
+				<span>how far away should the content be from the borders of the parent element, shorthand for top, bottom,</span>
+			</div>
+			<div class="item-b">
+				<span>inset-block<br>inset-block-start<br>inset-block-end<br>inset-inline<br>inset-inline-start<br>inset-inline-end</span>
+				<span>sets the inset for block/display start/end.</span>
 			</div>
 			<div class="item-class">
 				<hgroup>
@@ -400,6 +497,52 @@
 			<div class="item-a">
 				<span>backface-visibility</span>
 				<span>show the backface of rotated element: hidden/visible.</span>
+			</div>
+			<div class="item-b">
+				<span>content</span>
+				<span>used to add additional text, commonly with the before and after pseudo-classes, for example for adding a bullet point to a list element.</span>
+			</div>
+			<div class="item-a">
+				<span>cursor</span>
+				<span>specifies which mouse cursor to display over an element:
+					<ul>
+						<li>auto</li>
+						<li>alias</li>
+						<li>all-scroll</li>
+						<li>cell</li>
+						<li>col-resize</li>
+						<li>context-menu</li>
+						<li>copy</li>
+						<li>crosshair</li>
+						<li>default</li>
+						<li>e-resize</li>
+						<li>ew-resize</li>
+						<li>grab</li>
+						<li>grabbing</li>
+						<li>help</li>
+						<li>move</li>
+						<li>n-resize</li>
+						<li>ne-resize</li>
+						<li>nesw-resize</li>
+						<li>ns-resize</li>
+						<li>nwse-resize</li>
+						<li>no-drop</li>
+						<li>none</li>
+						<li>not-allowed</li>
+						<li>pointer</li>
+						<li>progress</li>
+						<li>row-resize</li>
+						<li>s-resize</li>
+						<li>se-resize</li>
+						<li>sw-resize</li>
+						<li>text</li>
+						<li>url()</li>
+						<li>w-resize</li>
+						<li>wait</li>
+						<li>zoom-in</li>
+						<li>zoom-out</li>
+					</ul>
+				</span>
 			</div>
 			<div class="item-class">
 				<hgroup>
@@ -683,6 +826,376 @@
 			<div class="item-b">
 				<span>border-spacing</span>
 				<span>sets the distance between adjacent cells, takes length.</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>breaks</h3>
+					<p>control the content flow</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>a page break</span>
+				<span>a page is like sheet of paper, they matter when printing a page, or generating a pdf, a page break tells the browser where to start a new page.</span>
+			</div>
+			<div class="item-b">
+				<span>a column break</span>
+				<span>when text flows into multiple columns, tell the browser to move the content into the next column instead of continuing in the current one.</span>
+			</div>
+			<div class="item-a">
+				<span>a region break</span>
+				<span>regions are rare and obsolete, an old css 2012 idea that let you pour text into multiple divs, stop the content and continue in the next region box. this is not practical today.</span>
+			</div>
+			<div class="item-b">
+				<span>break-after<br>break-before<br>break-inside</span>
+				<span>whether a page, column or region break should happen after, before or inside a specific  element. options:
+					<ul>
+						<li>auto</li>
+						<li>avoid</li>
+						<li>avoid-column</li>
+						<li>avoid-page</li>
+						<li>avoid-region</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>list</h3>
+					<p>make pretty lists</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>list-style</span>
+				<span>shorthand for list-style-image, list-style-position, list-style-type.</span>
+			</div>
+			<div class="item-b">
+				<span>list-style-image</span>
+				<span>specifies an image as the list-item marker, none or url().</span>
+			</div>
+			<div class="item-a">
+				<span>list-style-position</span>
+				<span>specifies the position of list-item markers, inside or outside.</span>
+			</div>
+			<div class="item-b">
+				<span>list-style-type</span>
+				<span>specifies list style type:
+					<ul>
+						<li>disc</li>
+						<li>armenian</li>
+						<li>circle</li>
+						<li>cjk-ideographic</li>
+						<li>decimal</li>
+						<li>decimal-leading-zero</li>
+						<li>georgian</li>
+						<li>hebrew</li>
+						<li>hiragana</li>
+						<li>hiragana-iroha</li>
+						<li>katakana</li>
+						<li>katakana-iroha</li>
+						<li>lower-alpha</li>
+						<li>lower-greek</li>
+						<li>lower-latin</li>
+						<li>lower-roman</li>
+						<li>none</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>table</h3>
+					<p>and pretty tables</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>caption-side</span>
+				<span>determines where the caption of a table should be placed, can be top or bottom.</span>
+			</div>
+			<div class="item-b">
+				<span>empty-cells</span>
+				<span>whether or not to display border and background on empty elements, show or hide.</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>@</h3>
+					<p>at-rules, instructions for the preprocessor</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>@charset</span>
+				<span>the encoding of the .css file itself, it tell the browser how to interpret the bytes, its implied that its ASCII by default but with this you can change it to unicode. its expected at the top of the file and if there is multiple they are ignored.</span>
+			</div>
+			<div class="item-b">
+				<span>@container</span>
+				<span>define styles for other elements depending on the container's size or styles, following aspects can be used in containerquery
+					<ul>
+						<li>aspect-ratio</li>
+						<li>block-size</li>
+						<li>height</li>
+						<li>inline-size</li>
+						<li>orientation</li>
+						<li>width</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>@counter-style</span>
+				<span>lets you create a custom style, the look of numbers in a counter using the attributes:
+					<ul>
+						<li>countername</li>
+						<li>system, cyclic, numeric, alphabetic, symbolic, fixed, for additive the additive-symbols is required</li>
+						<li>symbols</li>
+						<li>additive-symbols</li>
+						<li>negative, prepend or append if value is negative</li>
+						<li>prefix</li>
+						<li>suffix</li>
+						<li>range, for cycle</li>
+						<li>pad</li>
+						<li>speak-as, how speech synthesizers should read out the counter style</li>
+						<li>fallback, defines the fallback if the system is unable to construct the marker</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>@import</span>
+				<span>import another css file into the current file, can use a string or url, must be at the top but after charset and layer, it can also be media dependant which is very useful.</span>
+			</div>
+			<div class="item-a">
+				<span>@keyframes</span>
+				<span>make an animation sequence by defining css styles for points along the sequence. within in:
+					<ul>
+						<li>name, required</li>
+						<li>keyframes-selector, %, from(%), to(%)</li>
+						<li>css-styles, one or more CSS properties</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>@layer</span>
+				<span>first set the order of which classes are at which layers of importance, then when it applies over multiple tags the highest one will be chosen. a layer without a unique name is anonymous the order is the order of declaration, one with a unique name is called a named layer and can be ordered by using the @layer again.</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>margin</h3>
+					<p>separate your content</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>margin</span>
+				<span>shorthand for margin-top, margin-right, margin-bottom and margin-left.</span>
+			</div>
+			<div class="item-b">
+				<span>margin-top<br>margin-bottom<br>margin-left<br>margin-right</span>
+				<span>specifies the top/bottom/left/right margin.</span>
+			</div>
+			<div class="item-a">
+				<span>margin-block<br>margin-inline</span>
+				<span>specifies margin in block/inline direction.</span>
+			</div>
+			<div class="item-b">
+				<span>margin-block-start<br>margin-block-end<br>margin-inline-start<br>margin-inline-end</span>
+				<span>specifies margin start/end in block/inline direction.</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>marker</h3>
+					<p>a svg pointer</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>marker</span>
+				<span>put a marker on all vertices, url() or none.</span>
+			</div>
+			<div class="item-b">
+				<span>marker-start<br>marker-mid<br>marker-end</span>
+				<span>put a marker on the start/mid/end vertice, url() or none.</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>floating</h3>
+					<p>all about out of place flying elements</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>float</span>
+				<span>where the element should float, absolutely positioned elements ignore float and elements next to it will flow around it. options:
+					<ul>
+						<li>none</li>
+						<li>left</li>
+						<li>right</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>clear</span>
+				<span>below which floating elements should this element be pushed:
+					<ul>
+						<li>none</li>
+						<li>left</li>
+						<li>right</li>
+						<li>both</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>clearfix hack</span>
+				<span>a floating element taller than its container will overflow, to fix this use: <br>.clearfix::after {<br>&nbsp;&nbsp;content: "";<br>&nbsp;&nbsp;clear: both;<br>&nbsp;&nbsp;display: table;<br>}</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>masking and clipping</h3>
+					<p>keep things hidden</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>clip (deprecated)</span>
+				<span>deprecated and propertly replaced by clip-path, Clips an absolutely positioned element.</span>
+			</div>
+			<div class="item-b">
+				<span>clip-path</span>
+				<span>clip an element to a shape or SVG source. options:
+					<ul>
+						<li>clip-source, url to a SVG clippath element</li>
+						<li>basic-shape, circle(), ellipse(), polygon() or inset()</li>
+						<li>margin-box</li>
+						<li>border-box</li>
+						<li>padding-box</li>
+						<li>content-box</li>
+						<li>fill-box, object bounding box</li>
+						<li>stroke-box</li>
+						<li>view-box, svg viewport</li>
+						<li>none</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>column</h3>
+					<p>columnar<br>stuff</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>column-count</span>
+				<span>specifies the number of columns to divide an element into, for example divide a paragraph into 3 columns of text.
+			</div>
+			<div class="item-b">
+				<span>column-fill</span>
+				<span>how to fill the columns: balance, auto.</span>
+			</div>
+			<div class="item-a">
+				<span>column-gap</span>
+				<span>the gap between columns, takes length.</span>
+			</div>
+			<div class="item-b">
+				<span>column-rule</span>
+				<span>the border between columns, a shorthand for column-rule-color, column-rule-style and column-rule-width.</span>
+			</div>
+			<div class="item-a">
+				<span>column-rule-color</span>
+				<span>takes a color, if ommited is the color of the text.</span>
+			</div>
+			<div class="item-b">
+				<span>column-rule-width</span>
+				<span>the width of a column:
+					<ul>
+						<li>medium</li>
+						<li>thin</li>
+						<li>thick</li>
+						<li>length</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>column-span</span>
+				<span>how many columns an element should span across. options:
+					<ul>
+						<li>column-width, minimum width for each column</li>
+						<li>column-count, maximum number of columns</li>
+						<li>auto, default</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>counters</h3>
+					<p>when you count stuff</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>counter-increment</span>
+				<span>increment or decrement the value of one or more css counters.</span>
+			</div>
+			<div class="item-b">
+				<span>counter-reset</span>
+				<span>creates and resets the value of one or more counters.</span>
+			</div>
+			<div class="item-a">
+				<span>counter-set</span>
+				<span>creates and sets the value of one or more counters.</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>display</h3>
+					<p>pretty important</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>display</span>
+				<span>how to display certain containers and elements:
+					<ul>
+						<li>inline, span, no height and width has effect</li>
+						<li>block, p, starts on a new line and takes up the entire width</li>
+						<li>contents, makes the container dissapear, making the child elements level up in DOM</li>
+						<li>flex, block level</li>
+						<li>grid, block level</li>
+						<li>inline-flex, inline level</li>
+						<li>inline-grid, inline level</li>
+						<li>inline-table</li>
+						<li>list-item, element behaves like li</li>
+						<li>run-in, block or inline depending on context</li>
+						<li>table, like table tag</li>
+						<li>table-caption, behave like caption tag</li>
+						<li>table-column-group, behave like colgroup tag</li>
+						<li>table-header-group, behave like thead element</li>
+						<li>table-footer-group, behave like tfoot tag</li>
+						<li>table-row-group, behave like tbody tag</li>
+						<li>table-cell, behave like td tag</li>
+						<li>table-column, behave like col tag</li>
+						<li>table-row, behave like tr element</li>
+						<li>none, element is completely removed</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>typography</h3>
+					<p>all the text niceness you'll ever want</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>hanging-punctuation</span>
+				<span>allows for text to be centered without its punctutations coming into the calculation, often makes it look better. options:
+					<ul>
+						<li>none</li>
+						<li>first, only the first line</li>
+						<li>last, only the last line</li>
+						<li>allow-end, if it doesnt fit before justification it can be outside</li>
+						<li>force-end, forces the punctuation to hang</li>
+					</ul>
+				</span>
+				<div class="item-class">
+					<hgroup>
+						<h3>stacking context</h3>
+						<p>manage your z-index</p>
+					</hgroup>
+				</div>
+				<div class="item-a">
+					<span>isolation</span>
+					<span>useful with background-blend-mode and mix-blend-mode does an element need to create a new stacking context:
+						<ul>
+							<li>auto, only if required by the properties</li>
+							<li>isolate, must be created anyways</li>
+						</ul>
+					</span>
+				</div>
 			</div>
 		</div>
 	</main>
