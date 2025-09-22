@@ -362,6 +362,37 @@
 			</div>
 			<div class="item-class">
 				<hgroup>
+					<h3>writing-mode</h3>
+					<p>everything related to the writing-mode</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>writing-mode</span>
+				<span>sets the writing-mode to block or inline.</span>
+			</div>
+			<div class="item-b">
+				<span>block-size</span>
+				<span>specifies the size of an element in the block direction, determined by writing-mode property, takes length.</span>
+				</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>position</h3>
+					<p>everything related to positioning</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>bottom</span>
+				<span>sets the element at the bottom of its parent. options:
+					<ul>
+						<li>auto</li>
+						<li>length</li>
+						<li>%</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
 					<h3>misc</h3>
 					<p>everything that doesn't fit into any categories</p>
 				</hgroup>
@@ -369,6 +400,48 @@
 			<div class="item-a">
 				<span>backface-visibility</span>
 				<span>show the backface of rotated element: hidden/visible.</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>box</h3>
+					<p>even if there is no shorthand</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>box-decoration-break</span>
+				<span>how background, padding, border, border-image,box-shadow, margin and clip-path are applied when the element is fragmented. options:
+					<ul>
+						<li>slice, default</li>
+						<li>clone, as if it were individual</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>box-reflect</span>
+				<span>how the reflection of the element should be drawn. options:
+					<ul>
+						<li>none</li>
+						<li>below</li>
+						<li>above</li>
+						<li>left</li>
+						<li>right</li>
+						<li>below/above/left/right offset(length)</li>
+						<li>position offset gradient(transition)</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>box-shadow</span>
+				<span>attach shadows to an element. options:
+					<ul>
+						<li>h-offset, required</li>
+						<li>v-offset, required</li>
+						<li>blue</li>
+						<li>spread</li>
+						<li>color</li>
+						<li>inset</li>
+					</ul>
+				</span>
 			</div>
 			<div class="item-class">
 				<hgroup>
@@ -473,6 +546,23 @@
 					</ul>
 				</span>
 			</div>
+			<div class="item-b">
+				<span>background-blend-mode</span>
+				<span>ways to blend together layers of the background:
+					<ul>
+						<li>normal</li>
+						<li>multiply</li>
+						<li>screen</li>
+						<li>overlay</li>
+						<li>darken</li>
+						<li>lighten</li>
+						<li>color-dodge</li>
+						<li>saturation</li>
+						<li>color</li>
+						<li>luminosity</li>
+					</ul>
+				</span>
+			</div>
 			<div class="item-class">
 				<hgroup>
 					<h3>border</h3>
@@ -493,7 +583,7 @@
 				<span>a border which is only at the left and right of the writing direction. shorthand for border-block-width, border-block-style and border-block-color.</span>
 			</div>
 			<div class="item-b">
-				<span>border-width<br>border-block-width<br>border-inline-width</span>
+				<span>border-width<br>border-block-width<br>border-inline-width<br>border-inline-end-width<br>border-inline-start-width<br>border-block-start-width<br>border-inline-end-width<br>border-left-width<br>border-right-width<br>border-top-width<br>border-bottom-width</span>
 				<span>the width of a border. options:
 					<ul>
 						<li>medium</li>
@@ -504,7 +594,7 @@
 				</span>
 			</div>
 			<div class="item-a">
-				<span>border-style<br>border-block-style<br>border-inline-style</span>
+				<span>border-style<br>border-block-style<br>border-inline-style<br>border-inline-end-style<br>border-inline-start-style<br>border-block-start-style<br>border-inline-end-style<br>border-left-style<br>border-right-style<br>border-top-style<br>border-bottom-style</span>
 				<span>how to draw the border. options:
 					<ul>
 						<li>none</li>
@@ -521,7 +611,7 @@
 				</span>
 			</div>
 			<div class="item-b">
-				<span>border-color<br>border-block-color<br>border-inline-color</span>
+				<span>border-color<br>border-block-color<br>border-inline-color<br>border-inline-end-color<br>border-inline-start-color<br>border-block-start-color<br>border-inline-end-color<br>border-left-color<br>border-right-color<br>border-top-color<br>border-bottom-color</span>
 				<span>the color of a border and its visibility. options:
 					<ul>
 						<li>color</li>
@@ -534,7 +624,7 @@
 				<span>a shorthand for border-block-end-width, border-block-end-style and border-block-end-color, it applies them to the end/bottom of the border-block, you can look up what the respective attributes do on their own above.
 				</span>
 			</div>
-			<div class="item-a">
+			<div class="item-b">
 				<span>border-block-start</span>
 				<span>a shorthand for border-block-start-width, border-block-start-style and border-block-start-color, it applies them to the start/top of the border-block, you can look up what the respective attributes do on their own above.
 				</span>
@@ -544,7 +634,56 @@
 				<span>a shorthand for border-bottom-width, border-bottom-style and border-bottom-color, it applies them to the start/top of the border-block, you can look up what the respective attributes do on their own above.
 				</span>
 			</div>
-
+			<div class="item-b">
+				<span>border-collapse</span>
+				<span>whether two nearby borders should collapse into one or stay their own separate borders, useful for tables. can be seperate or collapse.</span>
+			</div>
+			<div class="item-a">
+				<span>border-image</span>
+				<span>shorthand for border-image-source, border-image-slice, border-image-width, border-image-outset, border-image-repeat.</span>
+			</div>
+			<div class="item-b">
+				<span>border-image-source</span>
+				<span>property to specify an which image to use as a border, takes a url.</span>
+			</div>
+			<div class="item-a">
+				<span>border-image-slice</span>
+				<span>how to slice the image and show it,
+					<ul>
+						<li>number, coords or pixel/em/rem</li>
+						<li>fill, shows the middle part</li>
+						<li>%, relative to height/width</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>border-image-width</span>
+				<span>how wide the border is, more info above.</span>
+			</div>
+			<div class="item-a">
+				<span>border-image-outset</span>
+				<span>place the image outside of the border edges, by pixels/rem/em or length units.</span>
+			</div>
+			<div class="item-b">
+				<span>border-image-repeat</span>
+				<span>to repeat or no-repeat</span>
+			</div>
+			<div class="item-a">
+				<span>border-radius</span>
+				<span>allows you to make circular borders for all 4 sides, takes 4 lengths.</span>
+			</div>
+			<div class="item-b">
+				<span>border-bottom-left-radius<br>border-bottom-right-radius<br>border-top-left-radius<br>border-top-right-radius</span>
+				<span>lets you make circular or curved borders for any one specific corner of the element.</span>
+			</div>
+			<div class="item-a">
+				<span>border-end-end-radius<br>border-end-start-radius<br>border-start-start-radius<br>border-start-end-radius</span>
+				<span>lets you create circular or curved borders for the corner where the block end/start meets the inline end/start in writing-mode.</span>
+			</div>
+			<div class="item-b">
+				<span>border-spacing</span>
+				<span>sets the distance between adjacent cells, takes length.</span>
+			</div>
 		</div>
 	</main>
 
