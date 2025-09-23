@@ -685,6 +685,17 @@
 					</ul>
 				</span>
 			</div>
+			<div class="item-a">
+				<span>user-select</span>
+				<span>whether the text of an element can be selected:
+					<ul>
+						<li>auto, browser decides</li>
+						<li>none, prevents</li>
+						<li>text, always selectable</li>
+						<li>all, select with one click instead of two</li>
+					</ul>
+				</span>
+			</div>
 			<div class="item-class">
 				<hgroup>
 					<h3>box</h3>
@@ -1183,6 +1194,26 @@
 				<span>tests if a browser supports a certain css feature, used to override classes if a browser supports the feature like a conditional statement.
 					<ul>
 						<li>@supports (display: grid) { ... }</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>@font-face</span>
+				<span>don't have to use one of the "web-safe" fonts anymore, you must first define a name for the font and then point to the font file
+					<ul>
+						<li>name required, defines the name of the font</li>
+						<li>url() required, defines the URL(s) where  the font should be downloaded from</li>
+						<li>unicode-range optional, defines the range of unicode characters the font supports</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>@font-palette-values</span>
+				<span>used to customize the default values of a font-palette
+					<ul>
+						<li>font-family defines the font-family name this palette can be applied to</li>
+						<li>base-palette defines the name or index of the base palette to use</li>
+						<li>override-colors defines the colors in the base palette to override</li>
 					</ul>
 				</span>
 			</div>
@@ -1778,7 +1809,341 @@
 					<p>all the text niceness you'll ever want</p>
 				</hgroup>
 			</div>
+			<div class="item-b">
+				<span>font</span>
+				<span>custom font used to display text</span>
+			</div>
 			<div class="item-a">
+				<span>font-family</span>
+				<span>font family for the text</span>
+			</div>
+			<div class="item-b">
+				<span>font-feature-setting</span>
+				<span>allows control over advanced typographic features in OpenType fonts
+					<ul>
+						<li>normal default settings to lay out text</li>
+						<li>feature-value way to give readable names to advanced font features</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>font-kerning</span>
+				<span>controls the usage of the kerning information stored in a font
+					<ul>
+						<li>auto the browser determines if font kerning should be applied or not</li>
+						<li>normal font kerning is applied</li>
+						<li>none font kerning is not applied</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>font-language-override</span>
+				<span>controls the usage of language-specific glyphs in a typeface</span>
+			</div>
+			<div class="item-a">
+				<span>font-size-adjust</span>
+				<span>used to preserve the readability and size of text, when fallback font occurs. lets you adjust your fallback font
+					<ul>
+						<li>number defines the aspect value to use</li>
+						<li>none default value</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>font-stretch</span>
+				<span>makes the text narrower (condensed) or wider (expanded)
+					<ul>
+						<li>ultra-condensed makes the text as narrow as it gets</li>
+						<li>extra-condensed makes the text narrower than condensed, not as narrow as ultra-condensed</li>
+						<li>condensed makes the text narrower than semi-condensed, not as narrow as extra-condensed</li>
+						<li>semi-condensed makes the text narrower than normal, not as narrow as condensed</li>
+						<li>normal default value</li>
+						<li>semi-expended makes the text wider than normal, not as wide as expanded</li>
+						<li>expanded makes the text wider than semi-expanded, not as wide as expanded</li>
+						<li>extra-expanded makes the text wider than expanded, not as wide as ultra-expanded</li>
+						<li>ultra-expanded makes the text as wide as it gets</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>font-style</span>
+				<span>specifies the font style for a text
+					<ul>
+						<li>normal</li>
+						<li>italic</li>
+						<li>oblique</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>font-synthesis</span>
+				<span>controls which missing typefaces (bold or italic) may be synthesized by the browser</span>
+			</div>
+			<div class="item-a">
+				<span>font-variant</span>
+				<span>small caps font
+					<ul>
+						<li>normal</li>
+						<li>small caps</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>font-variant-alternates</span>
+				<span>controls the usage of alternate glyphs associated to alternative names defined in font-feature-values</span>
+			</div>
+			<div class="item-a">
+				<span>font-variant-caps</span>
+				<span>controls the usage of alternate glyphs for capital letters
+					<ul>
+						<li>normal deactivates the use of alternate glyphs</li>
+						<li>small-caps</li>
+						<li>all-small-caps small capitals for both upper and lowercase letters</li>
+						<li>petite-caps</li>
+						<li>all-petite-caps petite capitals for both upper and lowercase letters</li>
+						<li>unicase mix of a small capitals for uppercase with normal lowercase</li>
+						<li>titling-caps</li>
+						<li>unset</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>font-variant-east-asian</span>
+				<span>controls the usage of alternate glyphs for east asian scripts</span>
+			</div>
+			<div class="item-a">
+				<span>font-variant-ligatures</span>
+				<span>controls which ligatures and contextual forms are used in textual content of the elements it applies to</span>
+			</div>
+			<div class="item-b">
+				<span>font-variant-numeric</span>
+				<span>controls the usage of alternate glyphs for numbers, fractions, and ordinal markers</span>
+			</div>
+			<div class="item-a">
+				<span>font-variant-position</span>
+				<span>controls the usage of alternate glyphs of smaller size positioned as superscript or subscript regarding the baseline of the font</span>
+			</div>
+			<div class="item-b">
+				<span>font-weight</span>
+				<span>sets the width of the text
+					<ul>
+						<li>normal</li>
+						<li>bold</li>
+						<li>bolder</li>
+						<li>lighter</li>
+						<li>100-900 from thick to thin, 400=normal, 700=bold</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>text-align</span>
+				<span>specifies the horizontal alignment of text in element
+					<ul>
+						<li>left</li>
+						<li>right</li>
+						<li>center</li>
+						<li>justify stretches the lines so that each line has equal width</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>text-align-last</span>
+				<span>specifies how to align the last line of a text
+					<ul>
+						<li>auto</li>
+						<li>left</li>
+						<li>right</li>
+						<li>center</li>
+						<li>justify last line is justified as the rest of the lines</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>text-decoration</span>
+				<span>specifies the decoration added to text
+					<ul>
+						<li>text-decoration-line underline, overline, line-through</li>
+						<li>text-decoration-color</li>
+						<li>text-decoration-style solid, wavy, dotted, dashed, double</li>
+						<li>text-decoration-thickness thickness of the decoration line</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>text-emphasis</span>
+				<span>applies emphasis marks to the text
+					<ul>
+						<li>none</li>
+						<li>filled emphasis marks are filled with a solid color</li>
+						<li>open emphasis marks are hollow</li>
+						<li>dot small emphasis marks are small circles</li>
+						<li>double-circle emphasis marks are double circles</li>
+						<li>triangle emphasis marks are triangles</li>
+						<li>sesame emphasis marks are sesames</li>
+						<li>string emphasis marks are the given string (one character)</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>text-emphasis-position</span>
+				<span>specifies the position of the emphasis marks
+					<ul>
+						<li>over applied over the text (writing-mode horizontal)</li>
+						<li>under applied under the text (writing-mode horizontal)</li>
+						<li>left applied to the left (writing-mode vertical)</li>
+						<li>right applied to the right (writing-mode vertical)</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>text-indent</span>
+				<span>specifies the indentation of the first line in a text-block
+					<ul>
+						<li>length fixed indentation in px, pt, cm, em, etc.</li>
+						<li>% indentation in % of the width of the parent element</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>text-justify</span>
+				<span>specifies the justification method of text when text-align is set to "justify"
+					<ul>
+						<li>auto</li>
+						<li>inter-word increases/decreases the space between words</li>
+						<li>inter-character increases/decreases the space between characters</li>
+						<li>none</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>text-orientation</span>
+				<span>specifies the orientation of characters
+					<ul>
+						<li>mixed default</li>
+						<li>upright characters are not rotated, standing upright</li>
+						<li>sideways  characters are orientated the same as the text lines are oriented with writing-mode vertical</li>
+						<li>sideways-right equal to property value sideways</li>
+						<li>use-glyph-orientation for use in SVG elements, so that text inherits deprecated SVG properties glyph-orientation-vertical and glyph-orientation-horizontal</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>text-overflow</span>
+				<span>specifies how overflowed content that is not displayed should be signaled to the user, required white-space: nowrap, overflow: hidden
+					<ul>
+						<li>clip default</li>
+						<li>ellipsis render an ellipsis to represent the clipped text</li>
+						<li>string render the given string to represent the clipped text</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>text-shadow</span>
+				<span>adds shadow to text
+					<ul>
+						<li>h-shadow horizontal shadow position</li>
+						<li>v-shadow vertical shadow position</li>
+						<li>blur-radius</li>
+						<li>color</li>
+						<li>none</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>text-transform</span>
+				<span>controls the capitalization of text
+					<ul>
+						<li>none</li>
+						<li>capitalize first character of each word is in uppercase</li>
+						<li>uppercase</li>
+						<li>lowercase</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>text-underline-offset</span>
+				<span>specifies the offset distance of underline text decorations
+					<ul>
+						<li>auto</li>
+						<li>length offset as length value</li>
+						<li>percentage offset as percentage value</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>text-underline-position</span>
+				<span>position of underline text decorations
+					<ul>
+						<li>auto</li>
+						<li>under underline below  the alphabetic baseline</li>
+						<li>from-font ff the font file includes information about underline position, use that value, if not, use auto</li>
+						<li>left in vertical writing mode will be placed to the left of the text, horizontal placed to auto</li>
+						<li>right in vertical writing mode will be placed to the right of the text, horizontal placed to auto</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>word-break</span>
+				<span>specifies how words should break when reaching the end of a line
+					<ul>
+						<li>normal</li>
+						<li>break-all to prevent overflow, word may be broken at any character</li>
+						<li>keep-all prevents words from breaking</li>
+						<li>break-word deprecated, replaced by overflow-wrap: break-word</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>word-spacing</span>
+				<span>increases or decreases the white space between words
+					<ul>
+						<li>normal</li>
+						<li>length defines an additional space between words (in px, pt, cm, em, etc)</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>word-wrap</span>
+				<span>allows long words to be able to be broken and wrap onto the next line
+					<ul>
+						<li>normal</li>
+						<li>break-word allows unbreakable words to be broken</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>letter-spacing</span>
+				<span>increases or decreases the space between characters in a text
+					<ul>
+						<li>normal</li>
+						<li>length defines a length that is used as the space between characters</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>line-height</span>
+				<span>height of a line
+					<ul>
+						<li>normal</li>
+						<li>number a number that will be multiplied with the current font-size to set the line height</li>
+						<li>length fixed line height in px, pt, cm, etc.</li>
+						<li>% line height in precent of the current font size</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>font-display</span>
+				<span>optional, defines how the font loads and displays
+					<ul>
+						<li>auto</li>
+						<li>block</li>
+						<li>swap</li>
+						<li>fallback</li>
+						<li>optional</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
 				<span>hanging-punctuation</span>
 				<span>allows for text to be centered without its punctutations coming into the calculation, often makes it look better. options:
 					<ul>
@@ -1787,6 +2152,89 @@
 						<li>last, only the last line</li>
 						<li>allow-end, if it doesnt fit before justification it can be outside</li>
 						<li>force-end, forces the punctuation to hang</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>hyphens</span>
+				<span>sets how to split words to improve layout:
+					<ul>
+						<li>none, not hyphenated</li>
+						<li>manual, only hyphenated at &hyphen or &shy</li>
+						<li>auto</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>hyphenate-character</span>
+				<span>decides which character is used as a hyphen:
+					<ul>
+						<li>auto</li>
+						<li>string</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>initial-letter</span>
+				<span>how many lines should the first letter in a paragraph take and how many lines should it sink downwards, used in newsletters and writing:
+					<ul>
+						<li>decimal number, size in lines of the initial letter</li>
+						<li>integer, optional, how many lines should it sink into the text</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>line-break</span>
+				<span>specifies how and if to break lines:
+					<ul>
+						<li>auto</li>
+						<li>loose, least restrictive rule</li>
+						<li>normal</li>
+						<li>strict, strictest rule</li>
+						<li>anywhere</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>quotes</span>
+				<span>sets the type of quotation marks to use for embedded quotations:
+					<ul>
+						<li>none</li>
+						<li>string string string string, which marks to use for 1st to 4th level of embedding</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>text-combine-upright</span>
+				<span>specifies the combination of multiple characters into a single space for a character
+					<ul>
+						<li>none</li>
+						<li>all</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>unicode-bidi</span>
+				<span>used with direction to set or return whether the text should be overriden to support multiple languages in the same document:
+					<ul>
+						<li>normal</li>
+						<li>embed, additional level of embedding for inline elements</li>
+						<li>bidi-override, for inline elements creates a override, for block elements creates a override for children that are inline</li>
+						<li>isolate, isolate from its siblings</li>
+						<li>isolate-override</li>
+						<li>plaintext</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>white-space</span>
+				<span>how whitespace is handled:
+					<ul>
+						<li>normal, collapses</li>
+						<li>nowrap, collapses, doesn't wrap into new line</li>
+						<li>pre, preserved by browser</li>
+						<li>pre-line, preserves lines</li>
+						<li>pre-wrap, preserved wrapping</li>
 					</ul>
 				</span>
 			</div>
