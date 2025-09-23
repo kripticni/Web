@@ -27,13 +27,14 @@ At the basic level and for a while, this repository
 will only support the ordinary web trio:
 - HTML5
 - CSS
+- Tailwind CSS
 - JavaScript
 
 But in the future, looking forward to expand to:
 - A web development framework or library
-- Tailwind CSS
 - PHP
 - TypeScript
+- shadcn/ui
 
 # Sources
 
