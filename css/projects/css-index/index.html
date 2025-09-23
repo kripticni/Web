@@ -464,6 +464,10 @@
 				<span>height</span>
 				<span>determines the height, length or %.</span>
 			</div>
+			<div class="item-a">
+				<span>width</span>
+				<span>determines the width, length or %.</span>
+			</div>
 			<div class="item-b">
 				<span>inline-size</span>
 				<span>size of an element in the inline direction, determined by writing-mode.</span>
@@ -498,6 +502,11 @@
 						<li>number</li>
 						<li>%</li>
 					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>zoom</span>
+				<span>proprietary feature of IE/Edge/Chrome, works like a layout-level-magnification, it scales the element and reflows its content box unlike scale, considered hacky legacy and obsolete.
 				</span>
 			</div>
 			<div class="item-class">
@@ -577,6 +586,27 @@
 				<span>rotate</span>
 				<span>allows you to rotate elements, to rotate around x, y or z, can be given as an angle, axis name + angle or three values + angle. For angle you can use deg, rad or turn, axis are x, y, z and there are also vector angles.</span>
 			</div>
+			<div class="item-b">
+				<span>translate</span>
+				<span>change the position of an element, moves in pixels or % for x and y.</span>
+			</div>
+			<div class="item-a">
+				<span>vertical-align</span>
+				<span>sets the vertical alignment of an element to:
+					<ul>
+						<li>baseline</li>
+						<li>length</li>
+						<li>%</li>
+						<li>sub</li>
+						<li>super</li>
+						<li>top</li>
+						<li>text-top</li>
+						<li>middle</li>
+						<li>bottom</li>
+						<li>text-bottom</li>
+					</ul>
+				</span>
+			</div>
 			<div class="item-class">
 				<hgroup>
 					<h3>misc</h3>
@@ -644,6 +674,16 @@
 			<div class="item-a">
 				<span>widows</span>
 				<span>how many empty lines to leave at the top of a page or column.</span>
+			</div>
+			<div class="item-b">
+				<span>visibility</span>
+				<span>element can be:
+					<ul>
+						<li>visible</li>
+						<li>hidden, still takes up space</li>
+						<li>collapse, only for table rows, row groups, columns or column groups, this value removes a row or column as if display: none were used.</li>
+					</ul>
+				</span>
 			</div>
 			<div class="item-class">
 				<hgroup>
@@ -1765,6 +1805,10 @@
 					</ul>
 				</span>
 			</div>
+			<div class="item-b">
+				<span>z-index</span>
+				<span>sets stack order of a positioned element, allows for numbers and negative numbers, the element with the greater number will always be in front of the one with a smaller number.</span>
+			</div>
 			<div class="item-class">
 				<hgroup>
 					<h3>transformations</h3>
@@ -1812,11 +1856,57 @@
 				</span>
 			</div>
 			<div class="item-a">
-				<span>specifies how nexted elements are rendered in 3d space:</span>
-				<span>
+				<span>transform-style</span>
+				<span>specifies how nexted elements are rendered in 3d space:
 					<ul>
 						<li>flat, no preserve</li>
 						<li>preserve-3d, preserves their 3d position</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>transitions</h3>
+					<p>elegance</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>transition</span>
+				<span>shorthand for transition-property, transition-duration, transition-timing-function, transition-delay.</span>
+			</div>
+			<div class="item-b">
+				<span>transition-property</span>
+				<span>specifies the name of the property the transition effect is for:
+					<ul>
+						<li>none</li>
+						<li>all</li>
+						<li>property, any css property/properties</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>transition-duration</span>
+				<span>how many seconds or miliseconds does a transition take to complete, takes time.</span>
+			</div>
+			<div class="item-b">
+				<span>transition-delay</span>
+				<span>specifies when the transition effect will start, also takes time.</span>
+			</div>
+			<div class="item-a">
+				<span>transition-timing-function</span>
+				<span>specifies which function curve the speed of the transition effect will use
+					<ul>
+						<li>linear</li>
+						<li>ease, default, slow-&gtfast-&gtslow</li>
+						<li>ease-in, slow start</li>
+						<li>ease-out, slow end</li>
+						<li>ease-in-out, slow end and start</li>
+						<li>step-start, steps(1, start)</li>
+						<li>step-end, steps(1, end)</li>
+						<li>steps(int, step-position), the stepping function</li>
+						<li>cubic-bezier(n,n,n,n), cubic-bezier function, values are 0-1</li>
+						<li>initial</li>
+						<li>inherit</li>
 					</ul>
 				</span>
 			</div>
