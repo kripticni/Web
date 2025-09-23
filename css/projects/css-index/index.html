@@ -121,6 +121,10 @@
 				<span>gap</span>
 				<span>shorthand for row-gap and column-gap, can also be used for multi-column layouts and grids.</span>
 			</div>
+			<div class="item-a">
+				<span>row-gap<br>column-gap</span>
+				<span>a simple gap in length between columns or grid/table elements.</span>
+			</div>
 			<div class="item-class">
 				<hgroup>
 					<h3>grid</h3>
@@ -216,6 +220,24 @@
 			</div>
 			<div class="item-class">
 				<hgroup>
+					<h3>flex and grid</h3>
+					<p>shared properties</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>place-content</span>
+				<span>defines justify-content and align-content for flexbox and grid.</span>
+			</div>
+			<div class="item-b">
+				<span>place-items</span>
+				<span>defines align-items and justify items for flexbox and grid.</span>
+			</div>
+			<div class="item-a">
+				<span>place-self</span>
+				<span>defines align-self and justify-self for grid and flexbox.</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
 					<h3>colors</h3>
 					<p>used to color various html tags and more</p>
 				</hgroup>
@@ -272,6 +294,27 @@
 					</ul>
 				</span>
 			</div>
+			<div class="item-b">
+				<span>mix-blend-mode</span>
+				<span>how an element's content should blend with its direct parent background:
+					<ul>
+						<li>normal</li>
+						<li>multiply</li>
+						<li>screen</li>
+						<li>overlay</li>
+						<li>darken</li>
+						<li>lighten</li>
+						<li>color-dodge</li>
+						<li>color-burn</li>
+						<li>difference</li>
+						<li>exclusion</li>
+						<li>hue</li>
+						<li>saturation</li>
+						<li>color</li>
+						<li>luminosity</li>
+					</ul>
+				</span>
+			</div>
 			<div class="item-class">
 				<hgroup>
 					<h3>filter</h3>
@@ -302,6 +345,16 @@
 			<div class="item-a">
 				<span>backdrop-filter</span>
 				<span>apply a graphical effect behind an element.</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>effects</h3>
+					<p>compositor niceness</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>opacity</span>
+				<span>how visible a parent and its children are, take a decimal number from 0.0 to 1.0 (fully visible).</span>
 			</div>
 			<div class="item-class">
 				<hgroup>
@@ -393,6 +446,10 @@
 					</ul>
 				</span>
 			</div>
+			<div class="item-b">
+				<span>commonly used</span>
+				<span>for animations you likely want to use the offset properties.</span>
+			</div>
 			<div class="item-class">
 				<hgroup>
 					<h3>size</h3>
@@ -414,6 +471,34 @@
 			<div class="item-b">
 				<span>block-size</span>
 				<span>size of an element in the block direction, determined by writing-mode.</span>
+			</div>
+			<div class="item-a">
+				<span>max-height, max-width, min-height, min-width</span>
+				<span>determines min/max height/width.</span>
+			</div>
+			<div class="item-b">
+				<span>max-block-size<br>min-block-size<br>max-inline-size<br>min-inline-size</span>
+				<span>determines min/max block/inline direction size for an element.</span>
+			</div>
+			<div class="item-a">
+				<span>resize</span>
+				<span>defines if and how a user can resize the element:
+					<ul>
+						<li>none</li>
+						<li>both, height and width</li>
+						<li>horizontal</li>
+						<li>vertical</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>scale</span>
+				<span>how much an element scales in x, y or z, if only 1 value it only x and y equally, for 2 x and y, for 3 x y and z. better than using transform in CSS. options:
+					<ul>
+						<li>number</li>
+						<li>%</li>
+					</ul>
+				</span>
 			</div>
 			<div class="item-class">
 				<hgroup>
@@ -488,6 +573,10 @@
 				<span>inset-block<br>inset-block-start<br>inset-block-end<br>inset-inline<br>inset-inline-start<br>inset-inline-end</span>
 				<span>sets the inset for block/display start/end.</span>
 			</div>
+			<div class="item-a">
+				<span>rotate</span>
+				<span>allows you to rotate elements, to rotate around x, y or z, can be given as an angle, axis name + angle or three values + angle. For angle you can use deg, rad or turn, axis are x, y, z and there are also vector angles.</span>
+			</div>
 			<div class="item-class">
 				<hgroup>
 					<h3>misc</h3>
@@ -543,6 +632,18 @@
 						<li>zoom-out</li>
 					</ul>
 				</span>
+			</div>
+			<div class="item-a">
+				<span>pointer-events</span>
+				<span>whether an element reacts to pointer events, mouse clicks, touch taps, stylus input, hover events, can be auto or none.</span>
+			</div>
+			<div class="item-b">
+				<span>orphans</span>
+				<span>how many empty lines to leave at the bottom of a page or column.</span>
+			</div>
+			<div class="item-a">
+				<span>widows</span>
+				<span>how many empty lines to leave at the top of a page or column.</span>
 			</div>
 			<div class="item-class">
 				<hgroup>
@@ -846,6 +947,10 @@
 				<span>regions are rare and obsolete, an old css 2012 idea that let you pour text into multiple divs, stop the content and continue in the next region box. this is not practical today.</span>
 			</div>
 			<div class="item-b">
+				<span>page-break-after<br>page-break-before<br>page-break-inside</span>
+				<span>replaced by break-after, break-before and break-inside, they are just below.</span>
+			</div>
+			<div class="item-a">
 				<span>break-after<br>break-before<br>break-inside</span>
 				<span>whether a page, column or region break should happen after, before or inside a specific  element. options:
 					<ul>
@@ -913,6 +1018,15 @@
 				<span>empty-cells</span>
 				<span>whether or not to display border and background on empty elements, show or hide.</span>
 			</div>
+			<div class="item-a">
+				<span>table-layout</span>
+				<span>defines the algorithm for laying out table cells, rows and columns. algorithms:
+					<ul>
+						<li>auto, width set by the widest unbreakable content in their cells</li>
+						<li>fixed, first width of cells/columns or equally divided if there is none</li>
+					</ul>
+				</span>
+			</div>
 			<div class="item-class">
 				<hgroup>
 					<h3>@</h3>
@@ -972,6 +1086,66 @@
 				<span>@layer</span>
 				<span>first set the order of which classes are at which layers of importance, then when it applies over multiple tags the highest one will be chosen. a layer without a unique name is anonymous the order is the order of declaration, one with a unique name is called a named layer and can be ordered by using the @layer again.</span>
 			</div>
+			<div class="item-a">
+				<span>@media</span>
+				<span>media query for different widths/heights of the viewport/device, orientation and resolution. Supports logical not (inversion), and (combining media type with media features), only (prevents older browsers from applying styles they dont support).<br>@media not|only mediatype and (mediafeature and|or|not mediafeature) { ... }<br>they are used to create responsive websites.
+					<ul>
+						<li>media-types: all, print(ers), screen</li>
+						<li>media-features: any-hover, any-pointer, aspect-ratio, color, color-gamut, color-index, device-posture, display-mode, dynamic-range, forced-colors, grid, height, hover, inverted-colors, monochrome, orientation, overflow-block, overflow-inline, pointer, prefers-color-scheme, prefers-contrast, prefers-reduced-data, prefers-reduced-motion, prefers-reduced-transparency, resolution, scan, scripting, shape, update, video-dynamic-range, width</li>
+						<li></li>
+						<li></li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>@namespace</span>
+				<span>used to define an XML namespace to be used in the stylesheet, it must follow all charset and import rules, and precede all other rules. Can define a namespace prefix and need a url, like @namespace prefix url().</span>
+			</div>
+			<div class="item-a">
+				<span>@page</span>
+				<span>customizes the dimension, orientation and margins of printed pages. properties:
+					<ul>
+						<li>margin: value</li>
+						<li>page-orientation: value</li>
+						<li>size: value</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>@property</span>
+				<span>allows for creating custom css properties, runs data type checking, constraining, default values and inheritableness: 
+					<ul>
+						<li>syntax: data type</li>
+						<li>inherits: true or false</li>
+						<li>initial-value: data type value</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>@scope</span>
+				<span>allows you to select elements in the DOM precisely without overly-specific selectors. used as:
+					<ul>
+						<li>@scope (scope root) { ... }</li>
+						<li>@scope (scope root) to (scope limit)</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>@starting-style</span>
+				<span>define default element starting styles before the element gets its first style update, used for smooth entry and exit transitions:
+					<ul>
+						<li>@starting-style { ... }</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>@supports</span>
+				<span>tests if a browser supports a certain css feature, used to override classes if a browser supports the feature like a conditional statement.
+					<ul>
+						<li>@supports (display: grid) { ... }</li>
+					</ul>
+				</span>
+			</div>
 			<div class="item-class">
 				<hgroup>
 					<h3>margin</h3>
@@ -996,6 +1170,226 @@
 			</div>
 			<div class="item-class">
 				<hgroup>
+					<h3>padding</h3>
+					<p>pad your content</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>padding</span>
+				<span>shorthand for all padding-* properties.</span>
+			</div>
+			<div class="item-a">
+				<span>padding-block<br>padding-block-start<br>padding-block-end<br>padding-inline<br>padding-inline-start<br>padding-inline-end</span>
+				<span>specifies the padding in the block/inline direction for its start/end/both.</span>
+			</div>
+			<div class="item-b">
+				<span>padding-top<br>padding-bottom<br>padding-left<br>padding-right</span>
+				<span>sets the top/bottom/left/right padding of an element.</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>outline</h3>
+					<p>a full border with no box model</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>outline</span>
+				<span>shorthand for outline-width, outline-style, and outline-color.</span>
+			</div>
+			<div class="item-b">
+				<span>outline-color</span>
+				<span>sets the color of the outline.</span>
+			</div>
+			<div class="item-a">
+				<span>outline-offset</span>
+				<span>offsets the outline beyond the border edge.</span>
+			</div>
+			<div class="item-b">
+				<span>outline-style</span>
+				<span>set the style of an outline:
+					<ul>
+						<li>none</li>
+						<li>hidden</li>
+						<li>dotted</li>
+						<li>dashed</li>
+						<li>solid</li>
+						<li>double</li>
+						<li>groove, 3d, depends on color</li>
+						<li>ridge, 3d, depends on color</li>
+						<li>inset, 3d, depends on color</li>
+						<li>outset, 3d, depends on color</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>outline-width</span>
+				<span>specifies how wide the outline is.</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>scroll</h3>
+					<p>when you have to overflow</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>scroll-behavior</span>
+				<span>whether the scroll should be a straight jump or a smooth animation, really nice:
+					<ul>
+						<li>auto</li>
+						<li>smooth</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>scroll-margin</span>
+				<span>allows for set amount of snapping after scroll, really nice as well, self aligns:
+					<ul>
+						<li>0, none</li>
+						<li>length</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>scroll-margin-block<br>scroll-margin-block-end<br>scroll-margin-block-start<br>scroll-margin-inline<br>scroll-margin-inline-end<br>scroll-margin-inline-start<br></span>
+				<span>allows for set amount of snapping after scroll in the direction of block/inline and its stard/end/both.</span>
+			</div>
+			<div class="item-b">
+				<span>scroll-margin-bottom<br>scroll-margin-top<br>scroll-margin-left<br>scroll-margin-right</span>
+				<span>allows for set amount of snapping after scroll at the top/bottom/left/right direction.</span>
+			</div>
+			<div class="item-a">
+				<span>scroll-padding</span>
+				<span>allows for set amount of snapping away from container's edge, really nice as well, self aligns:
+					<ul>
+						<li>0, none</li>
+						<li>length</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>scroll-padding-block<br>scroll-padding-block-end<br>scroll-padding-block-start<br>scroll-padding-inline<br>scroll-padding-inline-end<br>scroll-padding-inline-start<br></span>
+				<span>allows for set amount of scroll in the direction of block/inline and its stard/end/both.</span>
+			</div>
+			<div class="item-a">
+				<span>scroll-padding-bottom<br>scroll-padding-top<br>scroll-padding-left<br>scroll-padding-right</span>
+				<span>allows for set amount of snapping away from container's edge at the top/bottom/left/right direction.</span>
+			</div>
+			<div class="item-b">
+				<span>scroll-snap-align</span>
+				<span>specifies where elements will snap into focus after scrolling stops:
+					<ul>
+						<li>none</li>
+						<li>start</li>
+						<li>end</li>
+						<li>center</li>
+						<li>block inline</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>scroll-snap-stop</span>
+				<span>specifies behavior after fast swipes on trackpads or touch screens:
+					<ul>
+						<li>normal, scrolling slows down slowly and passes several elements</li>
+						<li>always, scrolling stops and the next element snaps into focus</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>scroll-snap-type</span>
+				<span>specifies how snap behavior is done when scrolling:
+					<ul>
+						<li>none, no scroll snap</li>
+						<li>x</li>
+						<li>y</li>
+						<li>inline</li>
+						<li>block</li>
+						<li>both, x and y</li>
+						<li>mandatory, automatically snap after scrolling</li>
+						<li>proximity, not as strict</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>scrollbar-color</span>
+				<span>sets the color of a scrollbar element:
+					<ul>
+						<li>auto</li>
+						<li>color color, thumb and the track</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>overflow</h3>
+					<p>usually not good in computer science</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>overflow</span>
+				<span>what happens if a content overflows an element's box:
+					<ul>
+						<li>visible</li>
+						<li>hidden, can be scrolled to</li>
+						<li>clip, forbids scrolling, the rest of the content is invisible</li>
+						<li>scroll, clipped but a scroll-bar is added to see the rest</li>
+						<li>auto, on overflow, adds a scroll-bar</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>disables the scroll anchoring of a browser, its a feature that prevents a viewable area that is scrolled into focus to move when new content is loaded above, highly situational:</span>
+				<span>
+					<ul>
+						<li>auto, enabled</li>
+						<li>none, disabled</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>overflow-wrap</span>
+				<span>can the browser break lines with long words if they overflow the container, usually good:
+					<ul>
+						<li>normal, long words willl not break</li>
+						<li>anywhere, break on overflow</li>
+						<li>break-word, break on overflow</li>
+						<li></li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>overflow-x<br>overflow-y</span>
+				<span>property specifies whether to clip the content, add a scrollbar or display overflow of a block-level element when it overflows left/right/top/bottom edges and how:
+					<ul>
+						<li>visible, can be rendered outside the edges</li>
+						<li>hidden, clipped no scroll</li>
+						<li>scroll, clipped with scroll</li>
+						<li>auto, scroll for overflowing boxes</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>overscroll-behavior<br>overscroll-behavior-x<br>overschool-behavior-y</span>
+				<span>turn off scroll chaining or overscroll affordance on an element when you try to scroll past the scroll boundary, really useful:
+					<ul>
+						<li>allows scroll chaining and overscroll affordance behavior</li>
+						<li>contain, no scroll chaining</li>
+						<li>none, no scroll chaining nor overscroll affordance</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>overscroll-behavior-block<br>overscroll-behavior-inline</span>
+				<span>scroll chaining or affordance in inline/block direction.
+					<ul>
+						<li>allows scroll chaining and overscroll affordance behavior</li>
+						<li>contain, no scroll chaining</li>
+						<li>none, no scroll chaining nor overscroll affordance</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
 					<h3>marker</h3>
 					<p>a svg pointer</p>
 				</hgroup>
@@ -1007,6 +1401,37 @@
 			<div class="item-b">
 				<span>marker-start<br>marker-mid<br>marker-end</span>
 				<span>put a marker on the start/mid/end vertice, url() or none.</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>SVG</h3>
+					<p>everyone likes vectorization</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>paint-order</span>
+				<span>in which order a svg element or text is painted.
+					<ul>
+						<li>takes up to three of these parameters in order:</li>
+						<li>fill</li>
+						<li>stroke</li>
+						<li>markers</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>3D</h3>
+					<p>different dimensions of thinking</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>perspective</span>
+				<span>give a 3D positioned element some perspective, how far the object is away from the user, length or none.</span>
+			</div>
+			<div class="item-b">
+				<span>perspective-origin</span>
+				<span>defines from which position the user is looking at the 3D element. It applies to the child elements, used with perpsective. Takes two precentages or two bottom/top/center/left/right.</span>
 			</div>
 			<div class="item-class">
 				<hgroup>
@@ -1039,6 +1464,18 @@
 				<span>clearfix hack</span>
 				<span>a floating element taller than its container will overflow, to fix this use: <br>.clearfix::after {<br>&nbsp;&nbsp;content: "";<br>&nbsp;&nbsp;clear: both;<br>&nbsp;&nbsp;display: table;<br>}</span>
 			</div>
+			<div class="item-b">
+				<span>shape-outside</span>
+				<span>tells the other elements how to go around the floating element. ways:
+					<ul>
+						<li>margin-box</li>
+						<li>border-box</li>
+						<li>padding-box</li>
+						<li>content-box</li>
+						<li>basic-shape, inset(), circle(), ellipse() or polygon()</li>
+					</ul>
+				</span>
+			</div>
 			<div class="item-class">
 				<hgroup>
 					<h3>masking and clipping</h3>
@@ -1065,6 +1502,137 @@
 						<li>none</li>
 					</ul>
 				</span>
+			</div>
+			<div class="item-a">
+				<span>mask</span>
+				<span>shorthand for mask-image, mask-mode, mask-repeat, mask-position, mask-size and mask-composite</span>
+			</div>
+			<div class="item-b">
+				<span>mask-clip</span>
+				<span>painted content is clipped to:
+					<ul>
+						<li>border-box</li>
+						<li>content-box</li>
+						<li>padding-box</li>
+						<li>fill-box</li>
+						<li>stroke-box</li>
+						<li>view-box</li>
+						<li>no-clip</li>
+						<li>border/padding/content box</li>
+						<li>text</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>mask-composite</span>
+				<span>specifies a compositing operation used on mask layer with the mask layers below it:
+					<ul>
+						<li>add</li>
+						<li>subtract</li>
+						<li>intersect</li>
+						<li>exclude</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>mask-image</span>
+				<span>specifies which image to take, url or none.</span>
+			</div>
+			<div class="item-a">
+				<span>mask-mode</span>
+				<span>chooses between luminance and alpha mask (by default its match-source).</span>
+			</div>
+			<div class="item-b">
+				<span>specifies the the origin of the mask box</span>
+				<span>
+					<ul>
+						<li>border-box</li>
+						<li>content-box</li>
+						<li>padding-box</li>
+						<li>fill-box</li>
+						<li>stroke-box</li>
+						<li>view-box</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>mask-position</span>
+				<span>set position to the mask layer image:
+					<ul>
+						<li>twice left/right/center center/top/bottom</li>
+						<li>% %</li>
+						<li>xpos ypos</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>mask-size<br>mask-height<br>mask-width</span>
+				<span>specify the size of the mask layer image:
+					<ul>
+						<li>auto</li>
+						<li>size, length</li>
+						<li>contain, scale to fit inside</li>
+						<li>cover, scale to cover</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>mask-type</span>
+				<span>specify if a svg mask element is treated as a luminance mask or as an alpha mask.</span>
+			</div>
+			<div class="item-b">
+				<span>object-fit</span>
+				<span>how a img or video should be resized to fit its container:
+					<ul>
+						<li>fill</li>
+						<li>contain, maintain ascept ratio</li>
+						<li>cover, fill the entire element while keeping the aspect ratio</li>
+						<li>none</li>
+						<li>scale-down</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>object-position</span>
+				<span>how to position with object-fit with x/y coordinates inside its own content box:
+					<ul>
+						<li>position</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>offset</span>
+				<span>shorthand for offset-anchor, offset-distance, offset-path, offset-position and offset-rotate properties.</span>
+			</div>
+			<div class="item-a">
+				<span>offset-anchor</span>
+				<span>specifies the point on an element that is fixed to the path it is animated/placed along either left/right/center bottom/top/center or xpos, ypos or x%, y%.</span>
+			</div>
+			<div class="item-b">
+				<span>offset-distance</span>
+				<span>specifies the position along a path where an animated element is placed.</span>
+			</div>
+			<div class="item-a">
+				<span>offset-path</span>
+				<span>specifies a path for the element to be animated/placed along. make with:
+					<ul>
+						<li>path(), an svg path</li>
+						<li>ray(), using css ray function</li>
+						<li>url(), to an svg file</li>
+						<li>basic-shapem inset(), circle(), ellipse() or polygon()</li>
+						<li>coord-box</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>offset-position</span>
+				<span>specifies the initial position of an element along a path.</span>
+			</div>
+			<div class="item-a">
+				<span>offset-rotate</span>
+				<span>specifies the rotation of a placed/animated element along a path, takes an angle, can  be reverse or auto.</span>
 			</div>
 			<div class="item-class">
 				<hgroup>
@@ -1181,21 +1749,76 @@
 						<li>force-end, forces the punctuation to hang</li>
 					</ul>
 				</span>
-				<div class="item-class">
-					<hgroup>
-						<h3>stacking context</h3>
-						<p>manage your z-index</p>
-					</hgroup>
-				</div>
-				<div class="item-a">
-					<span>isolation</span>
-					<span>useful with background-blend-mode and mix-blend-mode does an element need to create a new stacking context:
-						<ul>
-							<li>auto, only if required by the properties</li>
-							<li>isolate, must be created anyways</li>
-						</ul>
-					</span>
-				</div>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>stacking context</h3>
+					<p>manage your z-index</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>isolation</span>
+				<span>useful with background-blend-mode and mix-blend-mode does an element need to create a new stacking context:
+					<ul>
+						<li>auto, only if required by the properties</li>
+						<li>isolate, must be created anyways</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-class">
+				<hgroup>
+					<h3>transformations</h3>
+					<p>change your 2D and 3D objects</p>
+				</hgroup>
+			</div>
+			<div class="item-a">
+				<span>transform</span>
+				<span>applied a 2D or 3D transformation to elements:
+					<ul>
+						<li>none</li>
+						<li>matrix(6*n), 2d</li>
+						<li>matrix(16*n), 3d</li>
+						<li>translate(x, y)</li>
+						<li>translate3d(x, y, z)</li>
+						<li>translateX(x)</li>
+						<li>translateY(y)</li>
+						<li>translateZ(z)</li>
+						<li>scale(x, y)</li>
+						<li>scale3d(x, y, z)</li>
+						<li>scaleX(x)</li>
+						<li>scaleY(y)</li>
+						<li>scaleZ(z)</li>
+						<li>rotate(angle)</li>
+						<li>rotate3d(x, y, z, angle)</li>
+						<li>rotateX(angle)</li>
+						<li>rotateY(angle)</li>
+						<li>rotateZ(angle)</li>
+						<li>skew(ax, ay)</li>
+						<li>skewX(a)</li>
+						<li>skewY(a)</li>
+						<li>perspective(n)</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-b">
+				<span>transform-origin</span>
+				<span>allows you to change the position of transformed elements, very similar to transfrom: translate(%) properties.
+					<ul>
+						<li>takes 2 of either:</li>
+						<li>left/center/right or length or %</li>
+						<li>top/center/bottom or length or %</li>
+						<li>if a 3rd value is given its the length for the Z axis</li>
+					</ul>
+				</span>
+			</div>
+			<div class="item-a">
+				<span>specifies how nexted elements are rendered in 3d space:</span>
+				<span>
+					<ul>
+						<li>flat, no preserve</li>
+						<li>preserve-3d, preserves their 3d position</li>
+					</ul>
+				</span>
 			</div>
 		</div>
 	</main>
