@@ -1,0 +1,232 @@
+typography
+for styling the text 
+
+
+font
+custom font used to display text
+
+font-family
+font family for the text
+
+font-feature-setting
+allows control over advanced typographic features in OpenType fonts
+	normal default settings to lay out text
+	feature-value way to give readable names to advanced font features
+
+font-kerning
+controls the usage of the kerning information stored in a font
+	auto the browser determines if font kerning should be applied or not
+	normal font kerning is applied
+	none font kerning is not applied
+
+font-language-override
+controls the usage of language-specific glyphs in a typeface
+
+font-palette-values
+used to customize the default values of a font-palette
+	font-family defines the font-family name this palette can be applied to
+	base-palette defines the name or index of the base palette to use
+	override-colors defines the colors in the base palette to override
+
+font-size-adjust
+used to preserve the readability and size of text, when fallback font occurs. lets you adjust your fallback font
+	number defines the aspect value to use
+	none default value
+	
+font-stretch
+makes the text narrower (condensed) or wider (expanded)
+	ultra-condensed makes the text as narrow as it gets
+	extra-condensed makes the text narrower than condensed, not as narrow as ultra-condensed
+	condensed makes the text narrower than semi-condensed, not as narrow as extra-condensed
+	semi-condensed makes the text narrower than normal, not as narrow as condensed
+	normal default value
+	semi-expended makes the text wider than normal, not as wide as expanded
+	expanded makes the text wider than semi-expanded, not as wide as expanded
+	extra-expanded makes the text wider than expanded, not as wide as ultra-expanded
+	ultra-expanded makes the text as wide as it gets
+
+font-style
+specifies the font style for a text
+	normal
+	italic
+	oblique
+
+font-synthesis
+controls which missing typefaces (bold or italic) may be synthesized by the browser
+
+font-variant
+small caps font 
+	normal
+	small caps
+
+font-variant-alternates
+controls the usage of alternate glyphs associated to alternative names defined in font-feature-values
+
+font-variant-caps
+controls the usage of alternate glyphs for capital letters
+	normal deactivates the use of alternate glyphs
+	small-caps
+	all-small-caps small capitals for both upper and lowercase letters
+	petite-caps 
+	all-petite-caps petite capitals for both upper and lowercase letters
+	unicase mix of a small capitals for uppercase with normal lowercase
+	titling-caps 
+	unset
+
+font-variant-east-asian
+controls the usage of alternate glyphs for east asian scripts
+
+font-variant-ligatures
+controls which ligatures and contextual forms are used in textual content of the elements it applies to
+
+font-variant-numeric
+controls the usage of alternate glyphs for numbers, fractions, and ordinal markers
+
+font-variant-position
+controls the usage of alternate glyphs of smaller size positioned as superscript or subscript regarding the baseline of the font
+
+font-weight
+sets the width of the text
+	normal
+	bold
+	bolder
+	lighter
+	100-900 from thick to thin, 400=normal, 700=bold
+
+text-align
+specifies the horizontal alignment of text in element
+	left
+	right
+	center
+	justify stretches the lines so that each line has equal width
+
+text-align-last
+specifies how to align the last line of a text
+	auto
+	left
+	right
+	center
+	justify last line is justified as the rest of the lines
+
+text-decoration
+specifies the decoration added to text
+	text-decoration-line underline, overline, line-through
+	text-decoration-color
+	text-decoration-style solid, wavy, dotted, dashed, double
+	text-decoration-thickness thickness of the decoration line
+
+text-emphasis
+applies emphasis marks to the text
+	none
+	filled emphasis marks are filled with a solid color
+	open emphasis marks are hollow
+	dot small emphasis marks are small circles
+	double-circle emphasis marks are double circles
+	triangle emphasis marks are triangles
+	sesame emphasis marks are sesames
+	string emphasis marks are the given string (one character)
+
+emphasis-position
+specifies the position of the emphasis marks
+	over applied over the text (writing-mode horizontal)
+	under applied under the text (writing-mode horizontal)
+	left applied to the left (writing-mode vertical)
+	right applied to the right (writing-mode vertical)
+
+text-indent
+specifies the indentation of the first line in a text-block
+	length fixed indentation in px, pt, cm, em, etc.
+	% indentation in % of the width of the parent element
+
+text-justify
+specifies the justification method of text when text-align is set to "justify"
+	auto
+	inter-word increases/decreases the space between words
+	inter-character increases/decreases the space between characters
+	none
+
+text-orientation
+specifies the orientation of characters
+	mixed default
+	upright characters are not rotated, standing upright
+	sideways  characters are orientated the same as the text lines are oriented with writing-mode vertical
+	sideways-right equal to property value sideways
+	use-glyph-orientation for use in SVG elements, so that text inherits deprecated SVG properties glyph-orientation-vertical and glyph-orientation-horizontal
+
+text-overflow
+specifies how overflowed content that is not displayed should be signaled to the user, required white-space: nowrap, overflow: hidden
+	clip default
+	ellipsis render an ellipsis to represent the clipped text
+	string render the given string to represent the clipped text
+
+text-shadow
+adds shadow to text
+	h-shadow horizontal shadow position
+	v-shadow vertical shadow position
+	blur-radius
+	color
+	none
+
+text-transform
+controls the capitalization of text
+	none
+	capitalize first character of each word is in uppercase
+	uppercase 
+	lowercase
+
+text-underline-offset
+specifies the offset distance of underline text decorations
+	auto
+	length offset as length value
+	percentage offset as percentage value
+
+text-underline-position
+position of underline text decorations
+	auto
+	under underline below  the alphabetic baseline
+	from-font ff the font file includes information about underline position, use that value, if not, use auto
+	left in vertical writing mode will be placed to the left of the text, horizontal placed to auto
+	right in vertical writing mode will be placed to the right of the text, horizontal placed to auto
+
+word-break
+specifies how words should break when reaching the end of a line
+	normal
+	break-all to prevent overflow, word may be broken at any character
+	keep-all prevents words from breaking
+	break-word deprecated, replaced by overflow-wrap: break-word
+
+word-spacing
+increases or decreases the white space between words
+	normal
+	length defines an additional space between words (in px, pt, cm, em, etc)
+
+word-wrap
+allows long words to be able to be broken and wrap onto the next line
+	normal
+	break-word allows unbreakable words to be broken
+
+letter-spacing
+increases or decreases the space between characters in a text
+	normal
+	length defines a length that is used as the space between characters
+
+line-height
+height of a line
+	normal
+	number a number that will be multiplied with the current font-size to set the line height
+	length fixed line height in px, pt, cm, etc.
+	% line height in precent of the current font size
+
+@font-face
+don't have to use one of the "web-safe" fonts anymore, you must first define a name for the font and then point to the font file
+	name required, defines the name of the font
+	url() required, defines the URL(s) where  the font should be downloaded from
+	unicode-range optional, defines the range of unicode characters the font supports
+
+font-display
+optional, defines how the font loads and displays
+	auto
+	block
+	swap
+	fallback
+	optional
