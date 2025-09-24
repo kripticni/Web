@@ -162,6 +162,8 @@ body, html {
 
 .item-a span:first-child,
 .item-b span:first-child {
+	color: #003366;
+	-webkit-text-stroke: 0.25px black;
 	margin: auto;
 }
 
