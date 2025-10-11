@@ -45,5 +45,6 @@ Recommended to watch or follow along with the following.
 - [CSS Documentation](https://www.w3schools.com/cssref/index.php)
 - [Alternative CSS Documentation](https://cssreference.io/)
 - [JavaScript Advanced Crash Course](https://www.youtube.com/watch?v=TjjKcgtlsY8)
+- [Tailwind CSS v4 Full Course](https://www.youtube.com/watch?v=6biMWgD6_JY&t=1130s)
 - [Tailwind CSS v4 Crash Course](https://www.youtube.com/watch?v=H_kSd4kn0E8&t=5s)
 - [Tailwind CSS v4.1 Documentation](https://tailwindcss.com/docs/installation/using-vite)
